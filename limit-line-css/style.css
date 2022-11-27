@@ -25,14 +25,13 @@ h2 {
   margin-bottom: 1rem;
 }
 /* .cutoff-text {
-  --max-lines: 3;
+  --max-lines: 5;
 
   display: -webkit-box;
   -webkit-line-clamp: var(--max-lines);
   overflow: hidden;
   -webkit-box-orient: vertical;
 } */
-
 .cutoff-text {
   --max-lines: 5;
   --line-height: 1.4;
@@ -51,7 +50,7 @@ h2 {
   background: linear-gradient(to bottom, transparent, #fff);
 }
 
-.expand-btn {
+/* .expand-btn {
   appearance: none;
   border: 1px solid #333;
   padding: 0.5em;
@@ -71,4 +70,4 @@ h2 {
 }
 .cutoff-text:has(+ .expand-btn:checked) {
   max-height: none;
-}
+} */

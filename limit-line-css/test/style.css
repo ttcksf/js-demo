@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.card {
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+}
+/* .text {
+  --max-lines: 5;
+  --line-height: 1.7;
+
+  max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  overflow: hidden;
+  position: relative;
+}
+.text:has(+ .btn:not(:checked))::before {
+  content: "";
+  position: absolute;
+  height: calc(1em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+}
+.btn {
+  appearance: none;
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn::before {
+  content: "もっと見る";
+}
+.btn:checked::before {
+  content: "閉じる";
+}
+.text:has(+ .btn:checked) {
+  max-height: none;
+} */

@@ -1,4 +1,13 @@
-//読み込みを遅らせることができる
-//JSは上から下に向かって順番に実行していく
-const div = document.getElementById("div");
-console.log(div);
+//エンコード
+const result1 = encodeURI("https://lorem-co-ltd.com/テスト/");
+console.log(result1);
+
+const result2 = encodeURIComponent("https://lorem-co-ltd.com/テスト/");
+console.log(result2);
+
+//デコード
+const result3 = decodeURI(result1);
+console.log(result3);
+
+const result4 = decodeURIComponent(result2);
+console.log(result4);

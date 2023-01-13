@@ -1,0 +1,18 @@
+/* 親要素の方で横幅だけを指定しておく */
+.container {
+  width: 30%;
+}
+/* 子供の要素は横幅を親の100％（同じ幅）にしておく */
+.box {
+  width: 100%;
+  /* 横幅と縦幅の比率を揃えるため */
+  padding-top: 100%;
+  background: red;
+}
+
+.box-new {
+  width: 30%;
+  background: red;
+  /* 横幅と縦幅を１：１にする */
+  aspect-ratio: 1;
+}

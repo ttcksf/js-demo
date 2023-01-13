@@ -1,0 +1,25 @@
+.container {
+  width: 200px;
+  background: #e9e9e9;
+  /* 折り返しをなくす */
+  white-space: nowrap;
+  overflow: hidden;
+}
+p {
+  /* はみ出たものを非表示にする */
+  /* text-overflow: ellipsis; */
+  font-size: 24px;
+  /* cssで作るオリジナルのアニメーションを定義 */
+  animation: slide 5s linear infinite;
+}
+
+/* @keyframes 名前　でオリジナルのアニメーションを作る */
+@keyframes slide {
+  /* 0~100%（始まり〜終わり）の範囲でどのようなプロパティの変化があるか */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

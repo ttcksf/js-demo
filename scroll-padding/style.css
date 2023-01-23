@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header: 60px;
+  scroll-padding: calc(var(--header) + 30px);
+  scroll-behavior: smooth;
+}
+header {
+  background: #e9e9e9;
+  width: 100%;
+  height: var(--header);
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+div {
+  margin: 100px 0;
+}

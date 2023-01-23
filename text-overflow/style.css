@@ -3,15 +3,12 @@
   background: #e9e9e9;
   /* 折り返しをなくす */
   white-space: nowrap;
-  overflow: hidden;
 }
 p {
-  /* はみ出たものを非表示にする */
-  /* text-overflow: ellipsis; */
   font-size: 24px;
   /* cssで作るオリジナルのアニメーションを定義 */
   animation: slide 5s linear infinite;
-}
+} 
 
 /* @keyframes 名前　でオリジナルのアニメーションを作る */
 @keyframes slide {
@@ -23,3 +20,11 @@ p {
     transform: translateX(-100%);
   }
 }
+
+
+/* p {
+  /* はみ出たものを非表示にする
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+} */

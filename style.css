@@ -1,17 +1,24 @@
-.image__wrapper img {
-  width: 400px;
-  height: 300px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.download__btn {
-  width: 150px;
-  height: 50px;
-  border: none;
-  background-color: #696969;
-  border-radius: 10px;
+:root {
+  /* ヘッダーの高さを変数で管理する */
+  --header: 60px;
+  scroll-padding: calc(var(--header) + 20px);
+  scroll-behavior: smooth;
 }
-.download__btn a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+header {
+  background: #e9e9e9;
+  width: 100%;
+  height: var(--header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+div {
+  margin: 100px 0;
 }

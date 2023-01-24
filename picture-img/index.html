@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 上から試す -->
+      <!-- <picture>
+        <source srcset="../pc.jpg" media="(min-width: 1025px)" />
+        <source srcset="../tab.jpg" media="(min-width: 768px)" />
+        <img src="../sp.jpg" alt="" />
+      </picture> -->
+      <!-- <picture>
+        <source
+          srcset="../pc.jpg 1x, ../pc@2x.jpg 2x"
+          media="(min-width: 1025px)"
+        />
+        <source
+          srcset="../tab.jpg 1x, ../tab@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="../sp.jpg" alt="" />
+      </picture> -->
+
+      <!-- ファイルサイズが違う どちらが読み込まれているかやファイルサイズは検証ツールのソースで確認できる -->
+      <picture>
+        <!-- <source srcset="../pc.webp" type="image/webp" /> -->
+        <img src="../pc.jpg" alt="" />
+      </picture>
+    </div>
+  </body>
+</html>

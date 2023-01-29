@@ -1,14 +1,10 @@
 const progress = document.querySelector("#progress");
 const progressResult = document.querySelector("#progressResult");
+// progress.value = 80;
+// progressResult.innerHTML = progress.value;
 // 進捗の値
 let percentage;
 let interval;
-
-// ボタンを押したときに発動する関数
-function animation() {
-  percentage = progress.value;
-  interval = setInterval("increment()", 100);
-}
 
 // 進捗状況の数字を増やす関数
 function increment() {
@@ -22,4 +18,10 @@ function increment() {
     clearInterval(interval);
   }
   console.log(progress.value);
+}
+
+// ボタンを押したときに発動する関数
+function animation() {
+  percentage = progress.value;
+  interval = setInterval("increment()", 100);
 }

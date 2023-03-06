@@ -13,7 +13,7 @@
 // }
 // console.log("スコープ外:", num);
 
-// 入れ子のブロックスコープ
+// 入れ子のブロックスコープ;
 // function test() {
 //   if (true) {
 //     const num = 100;
@@ -23,15 +23,16 @@
 // test();
 
 // ブロックの内側に入れ子で渡すのはOK
-function test() {
-  const num = 100;
-  if (true) {
-    console.log(num);
-  }
-}
-test();
+// function test() {
+//   const num = 100;
+//   if (true) {
+//     console.log(num);
+//   }
+// }
+// test();
 
 // モジュールスコープ
-// import { num } from "./main.js";
-// console.log(num);
-// console.log(value);
+console.log("テスト");
+import { num } from "./main.js";
+console.log(num);
+console.log(value);

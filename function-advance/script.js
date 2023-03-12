@@ -16,12 +16,12 @@ const result = document.querySelector("#result");
 // }
 
 //書くだけでは無視されて実行されない（テンプレートとして使える、修正も一括反映できる）
-// function numCount() {
-//   for (let i = 0; i < 10; i++) {
-//     let el = `<li>${i}</li>`;
-//     result.insertAdjacentHTML("beforebegin", el);
-//   }
-// }
+function numCount() {
+  for (let i = 0; i < 10; i++) {
+    let el = `<li>${i}</li>`;
+    result.insertAdjacentHTML("beforebegin", el);
+  }
+}
 // function numCount() {
 //   for (let i = 0; i < 20; i++) {
 //     let el = `<li>${i}</li>`;

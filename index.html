@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- 検索一覧に載りたくないページ(noindex)
+    ・会員ページ
+    ・テストページ
+    ・重複ページ（片方のページを検索一覧から排除する） -->
+
+    <!-- 被リンクさせたくないとき -->
+    <h1>会員ページ</h1>
+    <a href="./second.html">Aサイトはこちら</a>
+  </body>
 </html>

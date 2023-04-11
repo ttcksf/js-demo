@@ -1,0 +1,35 @@
+/* 繰り返し使うカラーコードや数字を覚えなくてもよい */
+/* 繰り返し使う値を後から修正しやすい */
+:root {
+  --bg-red: red;
+  --bg-blue: blue;
+  --box-margin: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-mode, white);
+}
+.container {
+  display: flex;
+}
+.container div {
+  width: 100px;
+  height: 100px;
+  /* background: red; */
+  background: var(--bg-red);
+  /* margin-right: 16px; */
+  margin-right: var(--box-margin);
+}
+.wrapper {
+  display: flex;
+}
+.wrapper div {
+  width: 100px;
+  height: 100px;
+  /* background: blue; */
+  background: var(--bg-blue);
+}

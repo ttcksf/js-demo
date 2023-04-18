@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://yubinbango.github.io/yubinbango/yubinbango.js"
+      charset="UTF-8"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- <form class="h-adr">
+      <span class="p-country-name" style="display: none">Japan</span>
+
+      〒<input type="text" class="p-postal-code" size="8" maxlength="8" /><br />
+
+      <input
+        type="text"
+        class="p-region p-locality p-street-address p-extended-address"
+      /><br />
+    </form> -->
+
+    <form class="h-adr">
+      <span class="p-country-name" style="display: none">Japan</span>
+
+      〒<input type="text" class="p-postal-code" size="3" maxlength="3" /> -
+      <input type="text" class="p-postal-code" size="4" maxlength="4" /><br />
+
+      <label for="">
+        <span>都道府県</span>
+        <input type="text" class="p-region" readonly /><br />
+      </label>
+      <label for="">
+        <span>市町村区</span>
+        <input type="text" class="p-locality" readonly /><br />
+      </label>
+      <label for="">
+        <span>町域など</span>
+        <input type="text" class="p-street-address" /><br />
+      </label>
+      <label for="">
+        <span>番地など</span>
+        <input type="text" class="p-extended-address" />
+      </label>
+    </form>
+  </body>
+</html>

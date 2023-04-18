@@ -32,10 +32,12 @@ const promise = new Promise((resolve, reject) => {
 
 promise
   .then((result) => {
+    // 成功した時の処理内容はココ
     console.log(result);
   })
-  .catch((result) => {
-    console.log(result);
+  .catch((error) => {
+    // 失敗した時の処理内容はココ
+    console.log(error);
   });
 
 // 成功でも失敗でも最後にやりたいことはfinallyに書く（DB切断など）

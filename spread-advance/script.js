@@ -17,7 +17,7 @@ const student = {
 // console.log(gender);
 // console.log(age);
 
-const array = ["aaa", "bbb", "ccc"];
+// const array = ["aaa", "bbb", "ccc"];
 // const str1 = array[0];
 // const str2 = array[1];
 // const str3 = array[2];
@@ -31,6 +31,8 @@ const array = ["aaa", "bbb", "ccc"];
 // console.log(str2);
 // console.log(str3);
 
+const array = ["aaa", "bbb", "ccc"];
+
 // 配列のスプレッド構文
 const [str1, ...other] = array;
 // スプレッドは最初の要素にはできない
@@ -39,9 +41,9 @@ console.log(str1);
 console.log(other);
 
 // オブジェクトにもスプレッド構文が使える
-const { name, ...more } = student;
-console.log(name);
-console.log(more);
+// const { name, ...more } = student;
+// console.log(name);
+// console.log(more);
 
 const data = {
   id: "0001",
@@ -72,15 +74,18 @@ const place = {
 };
 
 // ネストされた場合の分割代入は親子の指定に注意
+// この書き方だと親のpreは取れない
 // const {
 //   area,
 //   pre: { tokyo, saitama, kanagawa },
 // } = place;
-// const {
-//   area,
-//   pre: { tokyo, saitama, kanagawa },
-//   pre,
-// } = place;
+
+const {
+  area,
+  pre: { tokyo, saitama, kanagawa },
+  pre, // 親プロパティは別で分割しておく
+} = place;
+
 // console.log(area);
 // console.log(tokyo);
 // console.log(saitama);

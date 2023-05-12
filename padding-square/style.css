@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: red;
+  /* width: 300px;
+  height: 300px; */
+  width: 30%;
+}
+.container::before{
+  content: "";
+  /* 横幅を指定しない場合はwidthを親要素に揃える */
+  display: block;
+   /* 比率を指定。padding-topに%で値を指定した場合、要素の横幅を参照するという性質がある */
+  padding-top: 100%;
+  padding-top: 66%;
+}
+
+.wrapper {
+  background: blue;
+  width: 30%;
+  /* aspect-ratioは古いSafariなどサポートされていないいない */
+  aspect-ratio: 1 / 1;
+}

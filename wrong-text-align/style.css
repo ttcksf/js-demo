@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background: red;
+  /* ブロック内のインライン要素にしか使えない */
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.image {
+  /* width: 300px; */
+
+  /* これでもいける */
+  width: 100%;
+  text-align: center;
+}
+.image img {
+  /* width: 100%; */
+
+  /* これでもいける */
+  width: 300px;
+
+  /* ただブロックにすると結局ダメ */
+  display: block;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background: #666;
+  padding: 50px;
+}
+@media (max-width: 767px) {
+  .container {
+    /* 他の場所のpaddingは消えてない */
+    /* padding-top: 50px; */
+    padding: 50px 0 0 0;
+  }
+}
+/* これと同じ */
+.wrapper {
+  width: 500px;
+  height: 500px;
+  background: #d0d0d0;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 50px;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 400px;
+  background: #d0d0d0;
+  white-space: normal;
+  /* 折り返さない */
+  /* white-space: nowrap; */
+  /* 改行を残す */
+  /* white-space: pre-line; */
+}
+.container h1 {
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    /* 折り返しを有効にするか文字サイズを小さくしないとレイアウトが崩れる */
+    white-space: normal;
+    /* font-size: 13px; */
+  }
+}

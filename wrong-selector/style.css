@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.test{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 16px;
+  background: #eee;
+}
+/* 親子関係 */
+.test .container{
+  color: red;
+}
+/* 複数クラスで他のtestクラスに影響しない*/
+.test.wrapper{
+  color: blue;
+}

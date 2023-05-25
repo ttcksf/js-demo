@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animation {
+  color: #ecf8f9;
+  font-size: 32px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-wrapper {
+  height: 50px;
+  /* 1個だけを表示するため */
+  overflow: hidden;
+}
+.text-wrapper div {
+  height: 100%;
+}
+.text-wrapper p {
+  padding: 4px 8px;
+  height: 100%;
+  display: inline-block;
+}
+.text1 {
+  /* アニメーションの名前、アニメーションの時間、アニメーションの動き方、アニメーションの繰り返し、繰り返しの順番 */
+  animation: slide-up 4s ease-in-out infinite alternate;
+}
+.text1 p {
+  background: #068da9;
+}
+.text2 p {
+  background: #7e1717;
+}
+.text3 p {
+  background: #e55807;
+}
+@keyframes slide-up {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: -100px;
+  }
+}

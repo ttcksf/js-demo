@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.shadow1 {
+  /* 横の位置、縦のサイズ、影の強さ、影の色 */
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.shadow2 {
+  text-shadow: -2px -2px 4px rgba(255, 0, 0, 0.5),
+    4px 4px 4px rgba(0, 0, 255, 0.5);
+}

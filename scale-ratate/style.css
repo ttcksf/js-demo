@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  width: 100%;
+  padding: 100px;
+}
+a {
+  display: inline-block;
+  width: 300px;
+}
+img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+a:hover img {
+  transform: scale(1.1) rotate(8deg);
+  z-index: 100;
+}

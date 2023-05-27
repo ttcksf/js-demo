@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+.container {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin-bottom: 16px;
+}
+.wrapper {
+  width: 100%;
+  height: 500px;
+  background: blue;
+}
+.wrapper .content {
+  /* width: 100%;
+  height: 100%; */
+  /* 親要素を変えたら影響を受けるので注意 */
+  width: 50%;
+  height: 50%;
+  background: green;
+  font-size: 64px;
+}
+p {
+  /* font-size: 16px; */
+  /* 親要素を基準にする。親要素で指定がなければ階層を上げて最終的にはhtmlタグになりremと同じことにもなる */
+  font-size: 2em;
+  /* htmlタグを基準にする。emの入れ子を防ぐ。 */
+  font-size: 2rem;
+  /* remやemはデバイスサイズに柔軟に対応するために使用されることが多い。基準を調整すれば個々のデザインのバランスを崩さずに調整できる。主にライブラリやオープンソース系。 */
+}
+.container {
+  /* 画面のサイズに依存する。背景などで使用される */
+  width: 100vw;
+  height: 100vh;
+}

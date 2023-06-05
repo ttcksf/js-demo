@@ -1,0 +1,17 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+p {
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+}
+.title1 {
+  font-weight: 300;
+}
+.title2 {
+  font-weight: 500;
+}
+.title3 {
+  font-weight: 700;
+}
+/* CSSではデフォルトで文字の調整をするようになっている。 */
+/* フォントの種類による厳密な再現をするならばインポートで太さまで指定する必要がある */

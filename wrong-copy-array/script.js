@@ -6,7 +6,8 @@ let arr2 = copyArray(arr1);
 
 arr2[0] = 4;
 arr2[3][0] = 5;
-
+console.log(arr1);
+console.log(arr2);
 function copyArray(arr) {
   let copy = [];
   for (let i = 0; i < arr.length; i++) {
@@ -18,13 +19,13 @@ function copyArray(arr) {
 
     // 値が配列の時
     if (Array.isArray(arr[i])) {
-      console.count(`インデックス番号${i}番目はif通ったよ`);
+      // console.count(`インデックス番号${i}番目はif通ったよ`);
       copy[i] = copyArray(arr[i]);
     } else {
-      console.count(`インデックス番号${i}番目はelse通ったよ`);
+      // console.count(`インデックス番号${i}番目はelse通ったよ`);
       copy[i] = arr[i];
     }
-    console.log(copy);
+    // console.log(copy);
   }
   return copy;
 }

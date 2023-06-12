@@ -16,6 +16,9 @@ let arr2 = copyArray(arr1);
 arr2[0] = 4;
 arr2[3].age = 24;
 
+console.log(arr1);
+console.log(arr2);
+
 // 再帰的な呼び出し
 function copyArray(arr) {
   let copy = [];
@@ -41,7 +44,7 @@ function copyArray(arr) {
       console.count(`インデックス番号${i}番目はcopyArrayのelse通ったよ`);
       copy[i] = arr[i];
     }
-    console.log(copy);
+    console.log("現在の中身は\n", copy);
   }
   return copy;
 }
@@ -64,6 +67,7 @@ function copyObj(obj) {
       console.count(`オブジェクトの${key}はcopyObjのelse通ったよ`);
       copy[key] = obj[key];
     }
+    console.log("現在の中身は\n", copy);
   }
   return copy;
 }

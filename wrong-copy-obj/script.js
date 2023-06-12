@@ -18,7 +18,8 @@ let obj2 = JSON.parse(JSON.stringify(obj1));
 
 obj2.id = "0002";
 obj2.sports.sports1 = "tennis";
-
+console.log("obj1:", obj1);
+console.log("obj2:", obj2);
 const container = document.querySelector(".container");
 const wrapper = document.querySelector(".wrapper");
 container.textContent = JSON.stringify(obj1);

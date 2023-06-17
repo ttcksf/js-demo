@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/slide-bg.png");
+  /* 同じ画像を複製しておくことで一度スタート地点に戻らなくてよくなるため */
+  background-repeat: repeat-x;
+  /* 10秒かけて同じ速度で動いて繰り返しアニメーションを動作させる */
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

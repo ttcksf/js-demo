@@ -28,11 +28,11 @@
 @keyframes fadeUp1 {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(500px);
   }
   50% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(250px);
   }
   100% {
     opacity: 1;

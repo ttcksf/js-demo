@@ -13,7 +13,7 @@
   border: 1px solid #333;
 }
 /* 子要素の中での順番 */
-/* .container div:nth-child(2) {
+/* .container div:nth-child(1) {
   background: red;
 } */
 /* .container p:nth-child(1) {

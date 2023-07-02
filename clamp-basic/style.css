@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content {
+  /* width: 600px; */
+  /* 最小値、推奨値、最大値 */
+  /* 90%を基本にしながら320pxだと288pxになるのを300pxを確保して、大きいサイズでは1000pxを上限にする */
+  width: clamp(300px, 90%, 1000px);
+  height: 300px;
+  background: #fff;
+  font-size: 18px;
+}
+.wrapper {
+  width: 100%;
+  height: 600px;
+  background: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .content {
+  width: 600px;
+  height: 300px;
+  background: #fff;
+  /* font-size: 18px; */
+  /* vwはレスポンシブが楽だがデザイン上は最適ではないことが多い */
+  /* とはいえメディアクエリで書くなら固定値でやった方が楽 */
+  /* font-size: 1.25vw; */
+  /* 最小値と最大値を指定できるため極端な大小が防げる */
+  font-size: clamp(1rem, 1.25vw, 1.8rem);
+}

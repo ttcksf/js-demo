@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 16px;
+}
+.content {
+  width: 600px;
+  display: flex;
+  /* 横並びでalign-itemsはデフォルトでstrechになる */
+  align-items: strech;
+  /* align-items: start; */
+  /* align-items: center; */
+}
+.content h1 {
+  width: 35%;
+  margin-right: 5%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  /* align-item:strech;でも高さをfit-contentにしてもOK */
+  height: fit-content;
+}
+/* インライン要素もdisplay:flex;のなかではブロックと同じ動作をしてしまうため使えない */
+.content span {
+  width: 35%;
+  margin-right: 5%;
+  text-align: center;
+  color: #fff;
+  background: #333;
+}
+.content p {
+  width: 60%;
+}

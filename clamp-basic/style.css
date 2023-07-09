@@ -38,7 +38,7 @@
   /* font-size: 18px; */
   /* vwはレスポンシブが楽だがデザイン上は最適ではないことが多い */
   /* とはいえメディアクエリで書くなら固定値でやった方が楽 */
-  /* font-size: 1.25vw; */
+  font-size: 1.25vw;
   /* 最小値と最大値を指定できるため極端な大小が防げる */
-  font-size: clamp(1rem, 1.25vw, 1.8rem);
+  /* font-size: clamp(1rem, 1.25vw, 1.8rem); */
 }

@@ -9,10 +9,10 @@
   width: 600px; */
   /* 引数の値のうち小さい方を採用する */
   /* 600px未満だとmax-width:100%; width: 600px;と同じ意味になる */
-  /* width: min(600px, 100%); */
+  width: min(600px, 100%);
   /* 引数に計算を渡すこともできる（中央寄せと一緒に使うなど） */
-  margin: 0 auto;
-  width: min(600px, calc(100% - 16px));
+  /* margin: 0 auto; */
+  /* width: min(600px, calc(100% - 16px)); */
   height: 600px;
   background: #333;
   display: flex;

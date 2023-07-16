@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1000px;
+  height: 500px;
+  border: 2px solid gray;
+  display: flex;
+  justify-content: center;
+  /* デフォルト */
+  justify-content: start;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between;
+}
+.container div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid black;
+}
+.wrapper {
+  width: 1000px;
+  height: 500px;
+  border: 2px solid gray;
+  display: flex;
+  /* デフォルト */
+  justify-content: start;
+  /* 縦並びは動きに注意 */
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+
+  /* デフォルト */
+  flex-direction: row;
+  /* 逆順 */
+  flex-direction: row-reverse;
+  /* 縦並び */
+  flex-direction: column;
+  /* 縦並びで逆順 */
+  flex-direction: column-reverse;
+}
+.wrapper div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  border: 1px solid black;
+}
+.wrapper div:nth-child(2) {
+  background: blue;
+}
+.wrapper div:nth-child(3) {
+  background: green;
+}

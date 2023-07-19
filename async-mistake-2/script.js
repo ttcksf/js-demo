@@ -13,5 +13,5 @@ const fetchData = async (count) => {
 };
 fetchData(100);
 
-// 通常のPromiseはfetchが終わってからforに入る
-// Promise.allとするとfetchとforを非同期（同時に）実行する
+// 通常のPromiseはfetchが終わってからpushに入る
+// Promise.allとするとfetchとpushを非同期（同時に）実行する

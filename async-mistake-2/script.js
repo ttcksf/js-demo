@@ -10,6 +10,13 @@ const fetchData = async (count) => {
   }
   const data = await Promise.all(array);
   console.log(data);
+
+  // for (let i = 1; i <= count; i++) {
+  //   const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${i}`);
+  //   const data = await res.json();
+  //   await array.push(data);
+  // }
+  // console.log(array);
 };
 fetchData(100);
 

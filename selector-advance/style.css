@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  background: #333;
+}
+ul {
+  width: 100%;
+  heigth: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 80px;
+}
+li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* ul li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+ul a {
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* 「>の意味」 */
+/* >は子供の要素に対するセレクターなので孫以下の要素には使えない */
+/* ul > li {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+} */
+/* ul > a {
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* 「~の意味」 */
+/* activeのついたliの後ろにあるすべてのli（同じ階層） */
+/* li.active ~ li:hover {
+  background: #ccc;
+} */
+
+/* 「+の意味」 */
+/* activeのついたliの後ろにある一つのli（同じ階層） */
+li.active + li:hover {
+  background: #ccc;
+}
+/* 余計なクラス名をつけない。nth-childと同じ発想 */
+/* いろんなものに付与できるクラス名と違って、特徴で限定させることでエラーを特定しやすくなる */

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 16px;
+}
+/* beforeが前でafterが後ろで付属品の要素を作り出す */
+/* .title::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+} */
+.title::after {
+  content: "※当社調べ";
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+}
+
+/* 画像は背景画像でやらないとサイズ変更できない */
+.pickup::before {
+  /* content: url("./images/star.png"); */
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("./images/star.png") center center / contain;
+  margin-right: 8px;
+}
+.pickup::after {
+  /* content: url("./images/star.png"); */
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("./images/star.png") center center / contain;
+  margin-left: 8px;
+}
+/* 擬似要素はデフォルトでインライン要素になっていることに注意 */
+.text::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("./images/star.png") center center / contain;
+  margin-left: 8px;
+}

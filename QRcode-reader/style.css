@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+.container {
+  width: 500px;
+  padding: 32px;
+  background: #008080;
+  border-radius: 8px;
+}
+.form {
+  width: 100%;
+  height: 240px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+.qrCode {
+  display: none;
+  width: 100px;
+  height: auto;
+}
+
+.upload div {
+  display: grid;
+  place-items: center;
+}
+
+.upload img {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.results {
+  margin-top: 24px;
+}
+.textarea {
+  width: 100%;
+  height: 120px;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+.btn {
+  margin-top: 24px;
+}
+.btnCopy {
+  width: 100%;
+  height: 54px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #cdc2ae;
+  font-weight: bold;
+  cursor: pointer;
+}
+.upload.active {
+  display: none;
+}
+.qrCode.active {
+  display: block;
+}

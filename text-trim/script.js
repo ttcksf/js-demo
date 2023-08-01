@@ -1,4 +1,4 @@
-let text1 = " こんにちは　";
+let text1 = " こんにちは ";
 // 文字の途中の空白は削除されない
 // let text1 = " こんに ちは　";
 let text2 = text1.trim();
@@ -13,6 +13,7 @@ const container = document.querySelector(".container");
 container.innerHTML = text1;
 const wrapper = document.querySelector(".wrapper");
 // ブラウザのHTMLでも空白を表示したいときは特殊記号を使う
+// HTMLの世界では「" "」と「"&nbsp;"」は明確に違う言葉として認識（trimをしても効かない）
 let text3 = "&nbsp;&nbsp;&nbsp;段落のために空白をつけたいです。";
 wrapper.innerHTML = text2;
 // wrapper.innerHTML = text3;

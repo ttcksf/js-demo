@@ -13,8 +13,8 @@ const createDate = new Intl.RelativeTimeFormat(undefined, {
   numeric: "auto",
 });
 // const newDate = createDate.format(-1, "month");
+const newDate = createDate.format(-1, "day");
 // const newDate = createDate.format(1, "day");
-const newDate = createDate.format(1, "day");
 
 const container = document.querySelector(".container");
 const wrapper = document.querySelector(".wrapper");

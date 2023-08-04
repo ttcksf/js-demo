@@ -1,4 +1,4 @@
-let text1 = " こんにちは ";
+let text1 = "　こんにちは　";
 // 文字の途中の空白は削除されない
 // let text1 = " こんに ちは　";
 let text2 = text1.trim();

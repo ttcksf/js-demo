@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+a {
+  display: block;
+  margin-bottom: 8px;
+}
+.link1 {
+  /* text-decorationを無しにすることで文字の色などを変えることができる */
+  text-decoration: none;
+  color: #333;
+}
+.link2 {
+  /* 下線の色を変える */
+  text-decoration-color: red;
+  color: red;
+  /* currentColorとすると文字の色と同じにできる(デフォルトは黒) */
+  text-decoration-color: currentColor;
+}
+.link3 {
+  /* 線の位置 */
+  text-decoration-line: underline;
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+}
+.link4 {
+  /* 線の種類 */
+  text-decoration-style: solid;
+  text-decoration-style: dashed;
+  text-decoration-style: wavy;
+}
+.link5 {
+  /* 線の太さ */
+  text-decoration-thickness: auto;
+  text-decoration-thickness: 3px;
+}
+.link6 {
+  color: #333;
+  /* 省略記法もできる */
+  text-decoration: solid line-through red 2px;
+  text-decoration: wavy underline blue 3px;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+a {
+  position: relative;
+  text-decoration: dashed underline #068fff 3px;
+  color: #068fff;
+  padding: 4px;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: #eee;
+}
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  /* paddingを入れたのでずらす */
+  left: 5%;
+  width: 90%;
+  height: 0px;
+  background: #068fff;
+  transition-duration: 0.2s;
+  /* 背景色として使うため */
+  z-index: -1;
+}
+a:hover::before {
+  width: 100%;
+  left: 0;
+  height: 100%;
+}

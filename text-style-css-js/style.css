@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+.title1 {
+  /* 英語の大文字、小文字を設定するものでデフォルトはnoneで書いた通りになる */
+  text-transform: none;
+  /* text-transform: uppercase; */
+}
+.title2 {
+  /* text-transform: lowercase; */
+}
+.title3 {
+  /* text-transform: capitalize; */
+}

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 会社やチームによっては1remのpxを設定することがあり、よく使われるのが62.5% 1rem=16pxよりも1rem=10pxの方が直感的に計算しやすいから好まれる */
+  /* 16px * 0.625 = 10px */
+  font-size: 62.5%;
+}
+.container {
+  width: 300px;
+  height: 100px;
+  background: red;
+  margin-bottom: 16px;
+  /* remはhtml要素のサイズをもとに倍率が決まる。 */
+  /* 通常はブラウザのフォントサイズが起点になり、Chromeの設定→デザイン→フォントサイズで「中」なら16pxが1remになる */
+  font-size: 1rem;
+  /* ちなみにemは親要素のサイズを基準とする（親要素がhtmlでなかればhtmlの基準値は無視される） */
+  /* font-size: 30px; */
+}
+.container p {
+  /* font-size: 1em; */
+}

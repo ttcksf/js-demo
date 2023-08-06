@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 64px;
+  background: #eee;
+}
+.cards {
+  width: 1000px;
+  display: flex;
+}
+.card {
+  position: relative;
+  width: 33.3%;
+  height: 400px;
+  overflow: hidden;
+  transition: transform 0.4s;
+}
+.card:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.4);
+}
+.image,
+.image::before,
+.image img,
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+.image img {
+  object-fit: cover;
+}
+.image::before {
+  content: "";
+  z-index: 1;
+  background: linear-gradient(180deg, #444, #333);
+  /* 親要素と背景色を混ぜる */
+  mix-blend-mode: multiply;
+  /* 通常時は非表示 */
+  opacity: 0;
+}
+.card:hover .image::before {
+  opacity: 1;
+}
+.text {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 16px;
+  color: #fff;
+  transform: translateY(240px);
+}
+.card:hover .text {
+  transform: translateY(0);
+}

@@ -7,13 +7,13 @@ body {
   margin: 16px;
 }
 .title1 {
-  /* 英語の大文字、小文字を設定するものでデフォルトはnoneで書いた通りになる */
+  /* 英語の大文字、小文字を設定するものでデフォルトはnone */
   text-transform: none;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 .title2 {
-  /* text-transform: lowercase; */
+  text-transform: lowercase;
 }
 .title3 {
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
 }

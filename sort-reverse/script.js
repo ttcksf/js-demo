@@ -15,6 +15,7 @@ const arr3 = ["BBB", "aaa", "ccc"];
 arr3.sort((a, b) => {
   return a.localeCompare(b);
 });
+arr4.sort((a, b) => a.localeCompare(b, "ja", { sensitivity: "base" }));
 
 const container = document.querySelector(".container");
 // container.textContent = "aaa";
@@ -23,6 +24,6 @@ const wrapper = document.querySelector(".wrapper");
 // wrapper.textContent = "bbb";
 wrapper.textContent = arr2;
 const inner = document.querySelector(".inner");
-// wrapper.textContent = "ccc";
+// inner.textContent = "ccc";
 inner.textContent = arr3;
 // sort().reverse()とすれば逆順もできる

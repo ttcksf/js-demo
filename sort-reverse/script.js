@@ -15,7 +15,6 @@ const arr3 = ["BBB", "aaa", "ccc"];
 arr3.sort((a, b) => {
   return a.localeCompare(b);
 });
-arr4.sort((a, b) => a.localeCompare(b, "ja", { sensitivity: "base" }));
 
 const container = document.querySelector(".container");
 // container.textContent = "aaa";

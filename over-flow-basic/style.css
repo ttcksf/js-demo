@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.news {
+  width: 1000px;
+  display: flex;
+}
+article {
+  width: 33.33%;
+  border: 1px solid #333;
+  padding: 8px;
+  overflow: hidden;
+}
+p {
+  font-size: 20px;
+}
+.date {
+  font-weight: bold;
+  color: #000;
+}
+.text {
+  color: #666;
+  height: 30px;
+  /* 高さが決まっているときに導入だけ表示する */
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  /* アニメーションで表示する（親要素にoverflow:hidden;が必要） */
+  white-space: nowrap;
+  animation: slide 8s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

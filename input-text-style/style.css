@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  margin: 16px;
+}
+input {
+  width: 300px;
+  height: 50px;
+  padding: 8px;
+  /* カーソルの色 */
+  /* caret-color: red; */
+  caret-color: transparent;
+}
+input:focus {
+  /* 枠線変更 */
+  outline: 2px solid #333;
+  /* 拡大 */
+  padding: 16px;
+}
+input::placeholder {
+  font-size: 16px;
+  color: #666;
+}

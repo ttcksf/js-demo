@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.triangle {
+  margin: 16px;
+  /* widthとheightを無くすとborderだけで要素を作るという特徴を利用する */
+  /* width: 200px;
+  height: 200px; */
+  /* 背景色を無くしてborderの一部だけを残すと三角形になる */
+  /* background: grey; */
+
+  border: 16px solid transparent;
+  border-top-color: green;
+  border-top-color: transparent;
+  border-right-color: blue;
+  border-right-color: transparent;
+  border-bottom-color: yellow;
+  border-bottom-color: transparent;
+  border-left-color: red;
+}
+h1 {
+  background: #337ccf;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+  position: relative;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-top-color: #337ccf;
+  left: 50%;
+  bottom: -80px;
+  transform: translateX(-50%);
+}

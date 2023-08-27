@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todoList {
+  width: 1000px;
+  background: #337ccf;
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+}
+.todo {
+  width: 100px;
+  height: 100px;
+  margin: 16px;
+  background: #fff;
+  cursor: grab;
+}

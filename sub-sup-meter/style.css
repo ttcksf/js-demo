@@ -1,0 +1,18 @@
+sup {
+  color: red;
+  font-size: 16px;
+}
+sub {
+  color: blue;
+  font-size: 16px;
+}
+h1 > .sup {
+  font-weight: normal;
+  font-size: 13px;
+  vertical-align: super;
+}
+h1 > .sub {
+  font-weight: normal;
+  font-size: 13px;
+  vertical-align: sub;
+}

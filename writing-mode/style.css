@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  width: 100%;
+  padding: 16px;
+  /* 右から縦書きにする(brも使える) */
+  writing-mode: vertical-rl;
+  /* 英語を縦向きにする */
+  text-orientation: upright;
+}
+/* line-heightとletter-spacingも使える */
+p {
+  line-height: 1.7;
+  letter-spacing: 0.3em;
+}
+/* 余白の方向はそのままでOK */
+h1 {
+  margin-right: 16px;
+}

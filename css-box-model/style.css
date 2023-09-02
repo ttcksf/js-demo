@@ -1,0 +1,22 @@
+/* 全ての要素はブロックになっていて、余白や枠線を加えるとサイズが大きくなる(検証ツールのcomputed) */
+h1 {
+  background: red;
+  /* box-sizingがデフォルトのままだとpaddingとborderがサイズに追加されてしまう */
+  padding: 10px;
+  border: 5px solid #333;
+  width: 300px;
+  height: 300px;
+  /* widthとheightからpaddingとborderを自動的に引く(デザインカンプと同じ見え方になる) */
+  box-sizing: border-box;
+}
+p {
+  background: blue;
+  /* デフォルトでmarginが当たっている（marginは相殺にも注意） */
+  margin: 0;
+}
+/* 事前に計算しやすくする */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

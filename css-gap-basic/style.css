@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+  background: #eee;
+}
+.cards {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  /* gap: 16px; */
+  flex-wrap: wrap;
+  /* 縦の間 */
+  /* row-gap: 16px; */
+  /* 横の間 */
+  /* column-gap: 8px; */
+  /* gap: 16px 8px; */
+}
+.card {
+  /* width: calc(1000px / 3); */
+  /* 折り返す時はcolumn-gapの分だけ引いておく */
+  width: calc((1000px - 16px) / 3);
+  padding: 56px 40px;
+  background: #fff;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  /* gapではなくmarginでも出来る */
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+.card:nth-child(3n) {
+  margin-right: 0;
+}
+.card:nth-child(n + 4) {
+  margin-bottom: 0;
+}

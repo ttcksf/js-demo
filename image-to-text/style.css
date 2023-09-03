@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+h1 {
+  font-family: "Impact", sans-serif;
+
+  font-size: 100px;
+  background: url("https://picsum.photos/400?random=1") no-repeat center center /
+    cover;
+  /* 文字の幅にする */
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

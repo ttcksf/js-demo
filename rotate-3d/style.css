@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  margin: 16px;
+}
+.rotate {
+  width: 300px;
+  height: 300px;
+  background: red;
+  /* X軸で回転する */
+  transform: rotateX(90deg);
+  transform: rotateX(70deg);
+  transform: rotateX(45deg);
+  /* Y軸で回転する */
+  transform: rotateY(15deg);
+  transform: rotateY(90deg);
+  transform: rotateY(45deg);
+}
+.card {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  position: relative;
+}
+.front {
+  background: url("https://picsum.photos/400?grayscale=1") no-repeat center
+    center / cover;
+
+  transform: rotateY(0deg);
+}
+.card:hover > .front {
+  transform: rotateY(180deg);
+}
+.back {
+  background: #333;
+
+  /* 180度の回転で裏返るため */
+  transform: rotateY(180deg);
+}
+.card:hover > .back {
+  transform: rotateY(0deg);
+}
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  color: #068fff;
+  /* 裏側が透けて見えてしまうので必要 */
+  backface-visibility: hidden;
+  transition: transform 0.4s;
+}

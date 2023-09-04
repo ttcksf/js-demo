@@ -32,7 +32,7 @@ const id = 10;
 function ifFunc(id) {
   // ここに当てはまると後続はスキップできる(早期リターン)
   // returnが実行されると後続の処理は実行されない特性を利用している
-  if (id != null) {
+  if (id == null) {
     return console.log("数字ではありません");
   }
   if (id < 50) {

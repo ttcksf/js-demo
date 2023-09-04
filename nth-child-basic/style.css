@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+  background: #eee;
+}
+.cards {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: calc(1000px / 3);
+  padding: 56px 40px;
+  background: #fff;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+/* 1を基準に数えるのに注意する（インデックス番号とは違う） */
+/* .card:nth-child(1) {
+  background: yellow;
+} */
+.card:nth-child(2) {
+  background: yellow;
+}
+/* .card:nth-child(6) {
+  background: yellow;
+} */
+/* firstは1番目と同じ */
+.card:first-child {
+  background: yellow;
+}
+/* lastは最後のもの */
+.card:last-child {
+  background: yellow;
+}
+/* 引数にn倍を入れることでパターンもできる(nは0から始めることに注意,nの0倍は0になるから無視される) */
+.card:nth-child(3n) {
+  background: yellow;
+}
+/* 偶数 */
+.card:nth-child(2n) {
+  background: yellow;
+}
+/* 奇数 */
+.card:nth-child(2n + 1) {
+  background: yellow;
+}
+/* 4番目以降  */
+.card:nth-child(n + 4) {
+  background: yellow;
+}
+
+/* nth-childとnth-of-typeは厳密には違う */

@@ -20,34 +20,34 @@ body {
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 /* 1を基準に数えるのに注意する（インデックス番号とは違う） */
-/* .card:nth-child(1) {
-  background: yellow;
-} */
+.card:nth-child(1) {
+  /* background: yellow; */
+}
 .card:nth-child(2) {
-  background: yellow;
+  /* background: yellow; */
 }
 /* .card:nth-child(6) {
   background: yellow;
 } */
 /* firstは1番目と同じ */
 .card:first-child {
-  background: yellow;
+  /* background: yellow; */
 }
 /* lastは最後のもの */
 .card:last-child {
-  background: yellow;
+  /* background: yellow; */
 }
 /* 引数にn倍を入れることでパターンもできる(nは0から始めることに注意,nの0倍は0になるから無視される) */
 .card:nth-child(3n) {
-  background: yellow;
+  /* background: yellow; */
 }
 /* 偶数 */
 .card:nth-child(2n) {
-  background: yellow;
+  /* background: yellow; */
 }
 /* 奇数 */
 .card:nth-child(2n + 1) {
-  background: yellow;
+  /* background: yellow; */
 }
 /* 4番目以降  */
 .card:nth-child(n + 4) {

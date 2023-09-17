@@ -2,7 +2,7 @@ const todos = document.querySelectorAll(".todo");
 console.log(todos);
 const newTodos = Array.from(todos);
 console.log(newTodos);
-newTodos.map((todo) => {
+todos.map((todo) => {
   console.log(todo);
 });
 // NodeListはDOMの集まりで、classList,appendChildなどHTMLを操作するためのもの

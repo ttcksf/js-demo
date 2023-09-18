@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+/* p {
+  animation: scroll-anime ease;
+  animation-timeline: view();
+} */
+p.anime {
+  animation: scroll-anime ease;
+  /* Chromeのみ */
+  animation-timeline: view();
+}
+@keyframes scroll-anime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

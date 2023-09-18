@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+/* https://scroll-driven-animations.style/ */
+img.anime {
+  animation: scroll-anime linear;
+  animation-timeline: view();
+  /* スクロールの終了位置が最下部になる場合は注意 */
+  /* animation-range: cover 0% cover 100%; */
+  /* 早めに終了させる */
+  animation-range: cover 0% cover 70%;
+}
+@keyframes scroll-anime {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}

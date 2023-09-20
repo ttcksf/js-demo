@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 400px;
+  margin: 16px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+li {
+  width: 33%;
+  background: #9681eb;
+  margin-right: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 8px;
+}
+li:last-child {
+  margin-right: 0;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+li.current {
+  background: #6527be;
+}
+
+p {
+  padding: 16px;
+  border: 2px solid #9681eb;
+  display: none;
+}
+p.current {
+  display: block;
+}

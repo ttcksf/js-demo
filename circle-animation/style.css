@@ -11,6 +11,7 @@
 }
 .circle {
   width: 100%;
+  max-width: 674px;
   height: 100%;
   background: url("./images/circle-bg.png") no-repeat center center / contain;
   position: relative;
@@ -25,4 +26,110 @@
   height: 110%;
   background-image: conic-gradient(transparent 0deg, white 0deg);
   clip-path: circle();
+}
+.circle img {
+  position: absolute;
+}
+.circle-item1 {
+  top: 130px;
+  opacity: 0;
+}
+.circle-item1.anime {
+  animation: fadeInRight1 1s ease-in-out forwards;
+}
+.circle-item2 {
+  top: 240px;
+  opacity: 0;
+}
+.circle-item2.anime {
+  animation: fadeInRight2 1s ease-in-out forwards;
+}
+.circle-item3 {
+  top: 460px;
+  opacity: 0;
+}
+.circle-item3.anime {
+  animation: fadeInRight3 1s ease-in-out forwards;
+}
+.circle-item4 {
+  top: 570px;
+  opacity: 0;
+}
+.circle-item4.anime {
+  animation: fadeInRight4 1s ease-in-out forwards;
+}
+.circle-item5 {
+  top: 300px;
+  opacity: 0;
+}
+.circle-item5.anime {
+  animation: fadeInLeft5 1s ease-in-out forwards;
+}
+.circle-item6 {
+  top: 400px;
+  opacity: 0;
+}
+.circle-item6.anime {
+  animation: fadeInLeft6 1s ease-in-out forwards;
+}
+
+@keyframes fadeInRight1 {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 180px;
+  }
+}
+@keyframes fadeInRight2 {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 50px;
+  }
+}
+@keyframes fadeInRight3 {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 200px;
+  }
+}
+@keyframes fadeInRight4 {
+  0% {
+    opacity: 0;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 200px;
+  }
+}
+@keyframes fadeInLeft5 {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 50px;
+  }
+}
+@keyframes fadeInLeft6 {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  100% {
+    opacity: 1;
+    left: 50px;
+  }
 }

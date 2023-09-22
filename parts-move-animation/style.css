@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.screen--full {
+  width: 100vw;
+  height: 600px;
+  padding: 0 10px;
+}
+.grid--v_center {
+  align-items: center;
+}
+#recruit .header_box {
+  padding: 0;
+  background: url("./images/glass-bg.png") no-repeat center center/cover;
+  aspect-ratio: 3228/1884;
+  max-height: 620px;
+}
+.header_box {
+  position: relative;
+  z-index: -1;
+}
+.contena--center {
+  display: flex;
+  justify-content: center;
+}
+.text__align--center {
+  text-align: center;
+}
+#recruit .main_cach_box {
+  padding: 30px;
+  background: none;
+}
+.main_cach_box {
+  color: #000;
+  z-index: 50;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#recruit .main_cach_box h2 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+.main_cach_box h2 {
+  white-space: nowrap;
+  line-height: 150%;
+  letter-spacing: 1.2rem;
+}
+#recruit .main_cach_box p {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 2.5;
+}
+.main_cach_box p {
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  #recruit .header_box {
+    background: url("./images/sp-glass-bg.png") no-repeat center center/cover;
+    aspect-ratio: 1126/1735;
+    height: auto;
+    max-height: 770px;
+  }
+  #recruit .main_cach_box {
+    top: 13%;
+    padding: 0;
+    width: 100%;
+  }
+  #recruit .main_cach_box h2 {
+    font-size: 20px;
+    font-size: min(5.3333333333vw, 27px);
+    letter-spacing: 2px;
+    margin-bottom: 1.2em;
+  }
+  #recruit .main_cach_box p {
+    text-align: center;
+    line-height: 1.95;
+    font-size: min(4.2666666667vw, 22px);
+  }
+}
+@media (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}

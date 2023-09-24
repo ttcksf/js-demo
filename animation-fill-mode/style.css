@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 32px;
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* 1秒待ったあとに2秒かけて実行する */
+  /* animation: anime 2s ease 1s; */
+  /* 100%の状態になる */
+  animation: anime 2s ease 1s forwards;
+  /* 0%の状態に戻る */
+  animation: anime 2s ease 1s backwards;
+  /* 0%と100%やる（100％が上書きされる） */
+  animation: anime 2s ease 1s both;
+  /* デフォルトはnone */
+  animation: anime 2s ease 1s none;
+  /* すでに同じプロパティを書いている場合は注意 */
+  /* transform: scale(1) rotate(0deg); */
+  transform: scale(1.1) rotate(30deg);
+}
+@keyframes anime {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(30deg);
+  }
+}

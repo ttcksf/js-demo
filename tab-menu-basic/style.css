@@ -7,28 +7,36 @@
   width: 400px;
   margin: 16px;
 }
-ul {
-  list-style: none;
+.tabs {
   display: flex;
   width: 100%;
 }
-li {
-  width: 33%;
+label {
+  width: 33.33%;
   background: #9681eb;
   margin-right: 1px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   padding: 8px;
+  color: #fff;
+  cursor: pointer;
 }
-li:last-child {
+label:last-child {
   margin-right: 0;
 }
-li a {
-  color: #fff;
-  text-decoration: none;
-}
-li.current {
+/* ~は兄弟の該当セレクタを全て選択する */
+/* 兄弟要素から指定しないと効かない */
+#tab1:checked ~ .tabs .tab1 {
   background: #6527be;
+}
+#tab2:checked ~ .tabs .tab2 {
+  background: #6527be;
+}
+#tab3:checked ~ .tabs .tab3 {
+  background: #6527be;
+}
+input {
+  display: none;
 }
 
 p {
@@ -36,6 +44,13 @@ p {
   border: 2px solid #9681eb;
   display: none;
 }
-p.current {
+
+#tab1:checked ~ .contents .content1 {
+  display: block;
+}
+#tab2:checked ~ .contents .content2 {
+  display: block;
+}
+#tab3:checked ~ .contents .content3 {
   display: block;
 }

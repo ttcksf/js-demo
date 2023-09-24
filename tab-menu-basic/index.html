@@ -10,21 +10,26 @@
   </head>
   <body>
     <div class="container">
-      <ul>
-        <li class="tab current"><a href="">Web制作 </a></li>
-        <li class="tab"><a href="">マーケティング</a></li>
-        <li class="tab"><a href="">動画編集</a></li>
-      </ul>
+      <!-- nameを同じ値にしないと単一選択にならない -->
+      <input type="radio" name="radio" id="tab1" checked />
+      <input type="radio" name="radio" id="tab2" />
+      <input type="radio" name="radio" id="tab3" />
+      <div class="tabs">
+        <!-- inputのidとlabelのforを同じ値にすると紐づく -->
+        <label for="tab1" class="tab1">Web制作</label>
+        <label for="tab2" class="tab2">マーケティング</label>
+        <label for="tab3" class="tab3">動画制作</label>
+      </div>
       <div class="contents">
-        <p class="content current">
+        <p class="content1">
           ホームページやLPなど様々なサイトを作成します。<br />
           大規模サイトはもちろん、1ページから承っております。
         </p>
-        <p class="content">
+        <p class="content2">
           SEO対策から広告運用まで対応できます。<br />
           サイトを使った集客を行いたい方はお問い合わせください。
         </p>
-        <p class="content">
+        <p class="content3">
           イベント、結婚式、各種SNSなど幅広いジャンルの動画を作成できます。<br />
           ドローンを使った空撮も可能です。
         </p>

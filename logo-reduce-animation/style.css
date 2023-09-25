@@ -95,41 +95,129 @@ body {
   width: 210px;
   top: 0px;
   left: 26px;
+  animation: zero1 1.1s ease-in-out 0.1s;
+}
+@keyframes zero1 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero2 {
   width: 109px;
   top: 103px;
   left: 7px;
+  animation: zero2 1.2s ease-in-out 0.1s;
+}
+@keyframes zero2 {
+  from {
+    opacity: 0;
+    transform: translate(-190%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero3 {
   width: 106px;
   top: 16px;
   left: 215px;
+  animation: zero3 1.3s ease-in-out 0.1s;
+}
+@keyframes zero3 {
+  from {
+    opacity: 0;
+    transform: translate(50%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero4 {
   width: 102px;
   top: 149px;
   left: 15px;
+  animation: zero4 1.4s ease-in-out 0.1s;
+}
+@keyframes zero4 {
+  from {
+    opacity: 0;
+    transform: translate(-170%, 10%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero5 {
   width: 102px;
   top: 101px;
   left: 234px;
+  animation: zero5 1.5s ease-in-out 0.1s;
+}
+@keyframes zero5 {
+  from {
+    opacity: 0;
+    transform: translate(300%, 0%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero6 {
   width: 107px;
   top: 283px;
   left: 29px;
+  animation: zero6 1.6s ease-in-out 0.1s;
+}
+@keyframes zero6 {
+  from {
+    opacity: 0;
+    transform: translate(-120%, 100%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero7 {
   width: 109px;
   top: 142px;
   left: 233px;
+  animation: zero7 1.7s ease-in-out 0.1s;
+}
+@keyframes zero7 {
+  from {
+    opacity: 0;
+    transform: translate(110%, 20%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .zero8 {
   width: 210px;
   top: 281px;
   left: 113px;
+  animation: zero8 1.8s ease-in-out 0.1s;
+}
+@keyframes zero8 {
+  from {
+    opacity: 0;
+    transform: translate(100%, 30%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero {
   width: 271px;
@@ -145,39 +233,127 @@ body {
   width: 167px;
   top: 0px;
   left: 26px;
+  animation: sp-zero1 1.1s ease-in-out 0.1s;
+}
+@keyframes sp-zero1 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero2 {
   width: 86px;
   top: 83px;
   left: 9px;
+  animation: sp-zero2 1.2s ease-in-out 0.1s;
+}
+@keyframes sp-zero2 {
+  from {
+    opacity: 0;
+    transform: translate(-190%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero3 {
   width: 85px;
   top: 13px;
   left: 175px;
+  animation: sp-zero3 1.3s ease-in-out 0.1s;
+}
+@keyframes sp-zero3 {
+  from {
+    opacity: 0;
+    transform: translate(50%, -50%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero4 {
   width: 81px;
   top: 119px;
   left: 15px;
+  animation: sp-zero4 1.4s ease-in-out 0.1s;
+}
+@keyframes sp-zero4 {
+  from {
+    opacity: 0;
+    transform: translate(-170%, 10%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero5 {
   width: 81px;
   top: 81px;
   left: 190px;
+  animation: sp-zero5 1.5s ease-in-out 0.1s;
+}
+@keyframes sp-zero5 {
+  from {
+    opacity: 0;
+    transform: translate(300%, 0%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero6 {
   width: 85px;
   top: 225px;
   left: 27px;
+  animation: sp-zero6 1.6s ease-in-out 0.1s;
+}
+@keyframes sp-zero6 {
+  from {
+    opacity: 0;
+    transform: translate(-120%, 100%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero7 {
   width: 87px;
   top: 114px;
   left: 190px;
+  animation: sp-zero7 1.7s ease-in-out 0.1s;
+}
+@keyframes sp-zero7 {
+  from {
+    opacity: 0;
+    transform: translate(110%, 20%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
 .sp-zero8 {
   width: 167px;
   top: 223px;
   left: 94px;
+  animation: sp-zero8 1.8s ease-in-out 0.1s;
+}
+@keyframes sp-zero8 {
+  from {
+    opacity: 0;
+    transform: translate(100%, 30%) rotate3d(1, 1, 1, 360deg);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }

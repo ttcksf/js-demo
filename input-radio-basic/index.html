@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- nameは質問項目を認識するもので同じ値を入れる、フォーム送信時にnameも送られるため必須 -->
+    <!-- valueは選択されたものをフォーム送信時に値としてどのように表示するか -->
+    <form action="">
+      <p>プログラミング言語</p>
+      <label for="">
+        HTML
+        <input type="radio" name="lang" value="HTML" checked />
+      </label>
+      <label for="">
+        CSS
+        <input type="radio" name="lang" value="CSS" />
+      </label>
+      <label for="">
+        PHP
+        <input type="radio" name="lang" value="PHP" />
+      </label>
+      <hr />
+      <p>趣味</p>
+      <label for="">
+        料理
+        <input type="radio" name="hobbit" value="cook" checked />
+      </label>
+      <label for="">
+        キャンプ
+        <input type="radio" name="hobbit" value="camp" />
+      </label>
+      <label for="">
+        ドライブ
+        <input type="radio" name="hobbit" value="drive" />
+      </label>
+      <!-- 入れ子にしないときはlabelのforとinputのidを同じ値にして紐づける -->
+      <hr />
+      <p>住まい</p>
+      <label for="tokyo">東京</label>
+      <input id="tokyo" type="radio" name="live" value="tokyo" checked />
+      <label for="osaka"> 大阪 </label>
+      <input id="osaka" type="radio" name="live" value="osaka" />
+      <label for="nagoya"> 名古屋 </label>
+      <input id="nagoya" type="radio" name="live" value="nagoya" />
+    </form>
+  </body>
+</html>

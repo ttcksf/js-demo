@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+article {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #666;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.show::before {
+  content: "新着";
+  background: yellow;
+  padding: 8px;
+}
+article::after {
+  /* content: "擬似要素です"; */
+  /* content: attr(data-number); */
+}

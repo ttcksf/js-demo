@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ffe5e5;
+}
+section {
+  width: 100%;
+  height: 400px;
+  padding: 160px 16px;
+  color: #fff;
+}
+.about {
+  /* 擬似要素に移動 */
+  /* background: #5d12d2; */
+  position: relative;
+}
+.about::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #5d12d2;
+  z-index: -1;
+  transform: skewY(-4deg);
+  /* rotateでやると角が見える */
+  /* transform: rotate(-4deg); */
+}
+.service {
+  /* background: #b931fc; */
+  position: relative;
+}
+.service::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #b931fc;
+  /* 前後のセクションとの重ね合わせはデザイン次第で調整必要 */
+  z-index: -2;
+  transform: skewY(4deg);
+}

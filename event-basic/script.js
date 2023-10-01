@@ -12,10 +12,10 @@ btn.addEventListener("click", (e) => {
 input.addEventListener("input", (e) => {
   console.log(e);
   // targetプロパティの中にあるvalueプロパティに入力された文字がある
-  let val = e.target.value;
-  console.log(val);
+  // let val = e.target.value;
+  // console.log(val);
   // イベントの種類によってプロパティの種類が違うため存在しないものを書かないように注意
-  // console.log(e.clientX);
+  console.log(e.clientX);
 });
 
 submit.addEventListener("click", (e) => {

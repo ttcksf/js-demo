@@ -11,8 +11,8 @@
 console.log(window);
 console.log(document);
 
-console.dir(window);
-console.dir(document);
+// console.dir(window);
+// console.dir(document);
 
 // windowの中にdocumentがあるのでこの書き方でもOK
 // console.log(window.document);

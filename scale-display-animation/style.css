@@ -7,40 +7,30 @@ body {
   margin: 16px;
 }
 .container {
-  position: relative;
-  z-index: 1;
-  background: #eeeeee;
+  background: #eee;
 }
-
 h2 {
-  padding: 16px;
   font-size: 48px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 16px;
 }
 p {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  z-index: 2;
   padding: 16px;
-  background: #362fd9;
   color: #fff;
+  background: #362fd9;
   animation: displayText 0.4s ease-in-out forwards;
-  transform-origin: top;
+  transform-origin: right;
 }
 @keyframes displayText {
   0% {
     opacity: 0;
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
   50% {
     opacity: 0;
-    transform: scaleY(0);
+    transform: scaleX(0);
   }
   100% {
     opacity: 1;
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }

@@ -11,7 +11,7 @@
   <body>
     <!-- nameは質問項目を認識するもので同じ値を入れる、フォーム送信時にnameも送られるため必須 -->
     <!-- valueは選択されたものをフォーム送信時に値としてどのように表示するか -->
-    <form action="">
+    <form action="" id="form">
       <p>プログラミング言語</p>
       <label for="">
         HTML
@@ -25,6 +25,7 @@
         PHP
         <input type="radio" name="lang" value="PHP" />
       </label>
+      <p id="langResult"></p>
       <hr />
       <p>趣味</p>
       <label for="">
@@ -39,8 +40,10 @@
         ドライブ
         <input type="radio" name="hobbit" value="drive" />
       </label>
+      <p id="hobbitResult"></p>
       <!-- 入れ子にしないときはlabelのforとinputのidを同じ値にして紐づける -->
       <hr />
+
       <p>住まい</p>
       <label for="tokyo">東京</label>
       <input id="tokyo" type="radio" name="live" value="tokyo" checked />
@@ -48,6 +51,7 @@
       <input id="osaka" type="radio" name="live" value="osaka" />
       <label for="nagoya"> 名古屋 </label>
       <input id="nagoya" type="radio" name="live" value="nagoya" />
+      <p id="liveResult"></p>
     </form>
   </body>
 </html>

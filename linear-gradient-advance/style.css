@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 800px;
+  height: 400px;
+  /* background: linear-gradient(90deg, #ffacac, #ffebb4); */
+  /* background: linear-gradient(0deg, #ffacac, #ffebb4); */
+  /* background: linear-gradient(180deg, #ffacac, #ffebb4); */
+  background: linear-gradient(45deg, #ffacac, #ffebb4);
+  /* 放射線状にグラデーション */
+  /* background: radial-gradient(#ffebb4, #ffacac); */
+  margin-bottom: 16px;
+}
+.wrapper {
+  width: 800px;
+  height: 400px;
+  /* 同じ色にすることでグレーマスクになる */
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://picsum.photos/800?random=1");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

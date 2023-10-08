@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 500px;
+  /* 高さを固定にしてoverflow-y:scroll;で要素のみのスクロールにする */
+  height: 600px;
+  border: 1px solid #ccc;
+}
+/* https://scroll-driven-animations.style/ */
+.cards {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  counter-reset: index;
+}
+.card {
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid #333; */
+  /* border-top: 1px solid #333; */
+  border-bottom: 1px solid #333;
+  padding: 16px;
+  counter-increment: index;
+  animation: openCard 0.1s linear forwards, closeCard 0.1s linear forwards;
+  /* entryが入り始めでopenCardを実行、exitが抜け始めでcloseCardを実行 */
+  animation-range: entry 0% exit 100%;
+  animation-timeline: view();
+}
+/* 登場 */
+@keyframes openCard {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 退場 */
+@keyframes closeCard {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}

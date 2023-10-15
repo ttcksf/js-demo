@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+}
+.card {
+  width: 400px;
+  height: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card:hover {
+  transform: perspective(500px) rotateY(0deg) scale(1.2);
+  z-index: 10;
+}
+/* 親要素cardsの中でマウスホバーされていないcard */
+.cards:hover > :not(:hover) {
+  transform: perspective(500px) rotateY(-45deg) scale(0.8);
+  margin: 0 -16px;
+}

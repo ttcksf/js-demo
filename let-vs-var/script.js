@@ -9,14 +9,18 @@ console.log(num2);
 
 // ②再宣言した時の違い
 var num3 = 300;
+console.log(num3);
+
 // これは再代入
 num3 = 301;
+console.log(num3);
+
 // これは再宣言（再代入と同じ動きになる）
 var num3 = 302;
 console.log(num3);
 
 let num4 = 400;
-num4 = 401;
+// num4 = 401;
 // let num4 = 402;
 console.log(num4);
 

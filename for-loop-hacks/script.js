@@ -26,14 +26,14 @@ for (let i = 0; i < users.length; i++) {
 }
 console.log(user);
 
-// 配列を返すmapなどを使う
+// 配列を返すmapメソッドを使う方法
 // const userName = users.map((user) => {
 //   return user.name;
 // });
 // console.log(userName);
 
-// もしくは空の配列を作って格納していく
-const userName = [];
+// 空の配列を作ってfor文で格納していく方法
+// const userName = [];
 for (let i = 0; i < users.length; i++) {
   userName.push(users[i].name);
 }

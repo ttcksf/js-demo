@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 64px;
+}
 a {
   font-size: 24px;
   font-weight: bold;
@@ -13,7 +16,7 @@ a:hover {
   /* opacity: 0.5; */
   /* filter: brightness(300%); */
   /* 黒以外ならアリ */
-  filter: brightness(30%);
+  filter: brightness(300%);
 }
 div {
   width: 400px;

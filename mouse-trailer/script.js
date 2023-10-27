@@ -7,7 +7,7 @@ window.onmousemove = (e) => {
   // console.log(x);
   // console.log(y);
 
-  // mouse.style.transform = `translate(${x}px, ${y}px)`;
+  mouse.style.transform = `translate(${x}px, ${y}px)`;
   // console.log(mouse.style.transform);
 
   // JSで@keyframesを設定する

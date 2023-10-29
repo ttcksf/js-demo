@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 64px;
+}
+div {
+  width: 200px;
+  height: 200px;
+}
+.row {
+  background: orange;
+  /* transformは複数のプロパティを同時に指定できる */
+  /* transform: scale(2, 1.5) translateY(150px); */
+
+  /* ②第一引数に変数名、第二引数にデフォルト値で変数名への代入による上書きが可能になる */
+  transform: scale(var(--sx, 2), var(--sy, 1.5)) translateY(var(--ty, 150px));
+}
+.row.card {
+  /* 複数プロパティを指定している要素に一部だけ上書きすることはできない。毎回リセットされるためscaleも元に戻ってしまう */
+  /* transform: translateY(0px); */
+  /* ①これなら上書きしたことになる */
+  /* transform: scale(2, 1.5) translateY(0px); */
+  /* ②もしくは変数にする。変数を適応する要素にもvar変数の中で条件分岐を書いておくことを忘れないように注意。 */
+  --ty: 0px;
+}

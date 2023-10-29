@@ -65,14 +65,3 @@ div {
   /* skewもショートハンドがなく単一だとYが0になるだけなので注意 */
   transform: skew(30deg);
 }
-.row {
-  background: orange;
-  /* transformは複数のプロパティを同時に指定できる */
-  transform: scale(1.8, 1.2) rotate(45deg);
-}
-.card {
-  /* 複数プロパティを指定している要素に一部だけ上書きすることはできない。毎回リセットされる */
-  /* transform: rotate(0deg); */
-  /* これなら上書きしたことになる */
-  transform: scale(1.8, 1.2) rotate(0deg);
-}

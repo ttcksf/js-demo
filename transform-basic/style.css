@@ -17,13 +17,13 @@ div {
 .container {
   background: red;
   /* 右回り */
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
   /* 左回り */
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
   /* 1turnで１回転になる */
-  transform: rotate(0.5turn);
-  transform: rotate(1.1turn);
-  transform: rotateX(45deg);
+  /* transform: rotate(0.5turn); */
+  /* transform: rotate(1.1turn); */
+  /* transform: rotateX(45deg); */
   transform: rotateY(45deg);
 }
 .wrapper {

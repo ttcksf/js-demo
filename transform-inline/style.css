@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 80px;
+}
+div {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 80px;
+}
+.container {
+  background: red;
+  transform: rotate(45deg);
+}
+.wrapper {
+  /* 親要素がブロック要素なら親要素で実行する方法もある */
+  /* transform: rotate(45deg); */
+}
+.wrapper span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  background: blue;
+  /* インライン要素にはtransformは使えないためinline-blockかblockに変更する必要がある */
+  display: inline-block;
+  transform: rotate(45deg);
+}

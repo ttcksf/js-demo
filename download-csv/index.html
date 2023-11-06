@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <p>
+          <label for="name">名前</label>
+          <input type="text" id="name" name="name" value="" />
+        </p>
+        <p>
+          <label for="address">住所</label>
+          <input type="text" id="address" name="address" value="" />
+        </p>
+        <p>
+          <label for="age">年齢</label>
+          <input type="text" id="age" name="age" value="" />
+        </p>
+        <p>
+          <label for="tel">電話番号</label>
+          <input type="text" id="tel" name="tel" value="" />
+        </p>
+        <p>
+          <button id="btnSave">作成</button>
+        </p>
+      </form>
+    </div>
+    <div class="results">
+      <p>
+        <button class="editSaveBtn">変更を保存</button>
+        <button class="exportBtn">エクスポート</button>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>名前</th>
+            <th>住所</th>
+            <th>年齢</th>
+            <th>電話番号</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <!-- <tr data-row="0">
+            <td data-col="0" data-name="name">山田太郎</td>
+            <td data-col="1">東京都</td>
+            <td>21</td>
+            <td>0001112222</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

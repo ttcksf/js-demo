@@ -26,11 +26,11 @@ const data = [
 //   console.log(data);
 //   return data;
 // };
-// const addItem = () => {
-//   const newData = [...data, { id: "0002", item: "bbb", price: 200 }];
-//   console.log(newData);
-//   return newData;
-// };
+const addItem = () => {
+  const newData = [...data, { id: "0002", item: "bbb", price: 200 }];
+  console.log(newData);
+  return newData;
+};
 // 同じデータに別の処理するかもしれないため直接追加せずに、元のデータをコピーして実行することで配列dataの中身を保持できる
 addItem();
 console.log(data);

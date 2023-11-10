@@ -1,8 +1,6 @@
 const arr = ["aaa", "bbb", "ccc"];
 const result = document.querySelector(".result");
 for (let i = 0; i < arr.length; i++) {
-  // console.log(arr.length);
-  // console.log(arr[i]);
   let el = `<li>${arr[i]}</li>`;
   result.insertAdjacentHTML("beforebegin", el);
 }

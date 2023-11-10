@@ -30,11 +30,10 @@ body {
   animation-delay: 0.3s;
 } */
 /* 検証ツールの「計算済み」で確認できる */
-.dot.active {
+.dot {
   animation: bgChange 1s infinite alternate;
   /* animation-delay: calc(var(--number) * 0.1s); */
 }
-
 @keyframes bgChange {
   100% {
     filter: brightness(40%);

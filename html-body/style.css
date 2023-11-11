@@ -1,0 +1,13 @@
+* {
+  /* background: red; */
+}
+html {
+  /* background: red; */
+}
+body {
+  /* html,bodyタグはあくまでコンテンツ全体なので必ずしも画面全体とは限らない */
+  background: red;
+  /* そうは言いながらも"*",html,bodyはどれかに背景を設定すると、サイズに関わらず背景色が画面いっぱいになる仕様なのでwidth: 100vw;height: 100vh;の記載は不要 */
+  /* width:100vw; */
+  /* height: 100vh; */
+}

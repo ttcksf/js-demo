@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   /* 一方で背景などをここで書いてしまうと入れ子の子要素にはここで書いたものが反映されるので注意。背景であればbodyが適している */
-  /* background: blue; */
+  background: blue;
 }
 html {
 }

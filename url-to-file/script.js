@@ -1,8 +1,4 @@
-// URLからリソースを取得してJavaScriptで読み取り可能なファイル(blobからファイルに変換)にする方法
-// https://picsum.photos/
-fetch(
-  "https://fastly.picsum.photos/id/785/200/200.jpg?hmac=vvHnS4TgoGTRqwI2soaIhbOxE7Q-hhoZTTDe75h_fz4"
-)
+fetch("./pc.jpg")
   .then((res) => res.blob())
   // MIMEタイプはファイルに含まれるデータを説明するもので事前に決められている
   // .then((blob) => console.log(blob));
@@ -23,5 +19,9 @@ function readFile(data) {
     const res = fileReader.result;
     // URLが表示されるのでブラウザで確認できる（imgタグに渡したりローカルストレージに保存できるようになった）
     console.log(res);
+
+    const a = document.querySelector("a");
+    a.href = res;
+    a.download = data.name;
   });
 }

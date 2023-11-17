@@ -30,6 +30,7 @@ article {
   color: red;
 } */
 /* スコープの概念で特定の要素内を守ることができる(ファイル単位はもちろん、パーツ単位で管理できる) */
+/* safariはサポートまだ */
 @scope (.wrapper) {
   .title {
     color: red;

@@ -3,29 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-article {
-  background: #ccc;
-  padding: 8px;
-}
-h2 {
-  color: red;
-}
-@scope (article) {
-  h2 {
-    color: blue;
+
+.container {
+  /* @starting-styleで最初のスタイル(chromeのみ) */
+  /* 0%~100%のようなシンプルなアニメーションは@keyframesとanimationを書かなくても良い */
+  @starting-style {
+    opacity: 0;
   }
+  transition: opacity 2s;
+  opacity: 1;
+  padding: 32px;
 }
-/* article h2 {
-  color: blue;
-} */
-.wrapper {
-  padding: 8px;
-  margin-top: 16px;
-}
-.wrapper .remain {
-  padding: 8px;
+/* よくある悩みケースに応用 */
+/* JSでクラス名を追加して表示させる方法(cssでtransitionが使えない) */
+/* .remain {
   display: none;
-  background: #eee;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.remain.show {
+  display: block;
+  opacity: 1;
+} */
+/* .remain {
+  display: none;
   opacity: 0;
   transition: opacity 2s;
 }
@@ -35,4 +36,4 @@ h2 {
   }
   display: block;
   opacity: 1;
-}
+} */

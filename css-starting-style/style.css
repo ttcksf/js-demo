@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article {
+  background: #ccc;
+  padding: 8px;
+}
+h2 {
+  color: red;
+}
+@scope (article) {
+  h2 {
+    color: blue;
+  }
+}
+/* article h2 {
+  color: blue;
+} */
+.wrapper {
+  padding: 8px;
+  margin-top: 16px;
+}
+.wrapper .remain {
+  padding: 8px;
+  display: none;
+  background: #eee;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.remain.show {
+  @starting-style {
+    opacity: 0;
+  }
+  display: block;
+  opacity: 1;
+}

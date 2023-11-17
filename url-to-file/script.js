@@ -1,4 +1,4 @@
-fetch("./pc.jpg")
+fetch("../pc.jpg")
   .then((res) => res.blob())
   // MIMEタイプはファイルに含まれるデータを説明するもので事前に決められている
   // .then((blob) => console.log(blob));

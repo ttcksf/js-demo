@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ファイルや画像、オーディオ、動画などのバイナリデータを持てるBlobデータを作る関数
-function createBlob(e) {
-  e.preventDefault();
+function createBlob() {
   //作成する配列バッファーのサイズをバイト単位で指定。setInt8を実行する数。
   // バイナリデータを使えるようになる
   let arrBfr = new ArrayBuffer(5);

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 16px;
+  margin-bottom: 32px;
+}
+article {
+  background: #ccc;
+  padding: 8px;
+}
+.title {
+  color: blue;
+}
+.wrapper {
+  padding: 16px;
+}
+/* titleというクラスが既にあることに気づかず上書きしてしまった */
+/* .title {
+  color: red;
+} */
+/* 親要素から指定して限定する（セレクタ名が長くなる） */
+/* .wrapper p.title {
+  color: red;
+} */
+/* 被らない独自の名前をつける（命名規則を周知しないといけない） */
+/* .ads_title {
+  color: red;
+} */
+/* スコープの概念で特定の要素内を守ることができる(ファイル単位はもちろん、パーツ単位で管理できる) */
+@scope (.wrapper) {
+  .title {
+    color: red;
+  }
+}
+/* ReactなどモダンJSではコンポーネント化と言って衝突を回避しやすい仕様になっており流行っている */

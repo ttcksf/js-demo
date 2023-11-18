@@ -12,3 +12,4 @@ const gender = document.querySelector(".gender");
 first.innerHTML = obj["firstName"];
 last.innerHTML = obj["lastName"];
 gender.innerHTML = obj["gender"];
+// ローカルストレージの値は削除する

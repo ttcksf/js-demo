@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+.container,
+.wrapper {
+  display: flex;
+}
+.container div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+}
+.wrapper div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #333;
+}
+
+/* h1の中の2番目 */
+:nth-child(2 of h1) {
+  color: blue;
+}
+/* 子要素になっている.itemの2番目（1つとは限らない） */
+/* :nth-child(2 of .item) {
+  background: red;
+} */
+/* 以下と同じ */
+/* .item:nth-child(2) {
+  background: red;
+} */
+
+/* .containerの中にある.itemのうち2番目（1つだけになる） */
+/* :nth-child(2 of .container .item) {
+  background: red;
+} */
+/* 以下と同じ */
+/* .container .item:nth-child(2){
+  background: red;
+} */
+
+table {
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #666;
+  padding: 8px 16px;
+}
+/* trの中にある奇数のみに背景をつけて互い違いにする */
+/* JSでクラス名を追加して非表示にすると互い違いに背景色がつかなくなる */
+/* tr:nth-child(odd) {
+  background: skyblue;
+} */
+.hidden {
+  display: none;
+}
+/* hiddenのないtrタグの中で奇数に背景指定 */
+:nth-child(odd of tr:not(.hidden)) {
+  background: skyblue;
+}

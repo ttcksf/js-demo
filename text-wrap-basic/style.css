@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+p {
+  font-size: 24px;
+  margin: 8px;
+  background: #ccc;
+}
+.text1 {
+  /* サイズに合わせて折り返す（必ず横幅をいっぱいに使ってから折り返す） */
+  text-wrap: wrap;
+}
+.text2 {
+  /* 強制的に折り返さない */
+  text-wrap: nowrap;
+}
+.text3 {
+  /* サイズに合わせて折り返す（必ずしも横幅いっぱい使うわけではない） */
+  text-wrap: balance;
+}
+.text4 {
+  /* 現在は長文には使用できないためタイトルやキャッチコピーなどが好ましい */
+  text-wrap: balance;
+}

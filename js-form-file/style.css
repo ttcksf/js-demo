@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid #666;
+  padding: 16px;
+}
+tr:nth-child(1) {
+  background: skyblue;
+  font-weight: bold;
+}
+img {
+  width: 300px;
+}

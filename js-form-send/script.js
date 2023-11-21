@@ -1,4 +1,4 @@
-// JSでフォームデータを取得して別ページに値を渡す
+// JSで入力内容を取得して送信する
 
 const form = document.querySelector(".form");
 

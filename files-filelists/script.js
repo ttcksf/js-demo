@@ -1,6 +1,6 @@
 const input = document.querySelector(".input");
 
-input.addEventListener("change", (e) => {
+input.addEventListener("change", () => {
   // inputタグにmultiple属性を追加すると複数選択できる
   // inputタグにaccept属性でファイル形式を限定させることもできる
   let files = input.files;

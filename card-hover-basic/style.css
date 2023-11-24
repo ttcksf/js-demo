@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+.cards {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  /* ホバーで拡大した際に軸を決めておく */
+  align-items: center;
+}
+.card {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  transition-duration: 0.4s;
+  /* overflow: hidden; */
+  cursor: pointer;
+}
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card1 {
+  background: url("./images/woman1.jpg") center center / cover;
+}
+.card2 {
+  background: url("./images/woman2.jpg") center center / cover;
+}
+.card3 {
+  background: url("./images/woman3.jpg") center center / cover;
+}
+.card:hover {
+  /* 重なるパターン */
+  /* transform: scale(1.2, 1.2); */
+  /* 他を縮小させるためにサイズで指定 */
+  width: 360px;
+  height: 360px;
+  transition-delay: 0.2s;
+  filter: grayscale(0.9);
+}

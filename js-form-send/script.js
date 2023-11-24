@@ -9,8 +9,9 @@ form.addEventListener("submit", (e) => {
   // FormDataに値が保存されているがそのままだと操作できない
   // console.log(data);
   for (c of data) {
-    console.log(c);
-    console.log(c[0], c[1]);
+    // console.log(c);
+    console.log("項目：", c[0]);
+    console.log("値：", c[1]);
   }
   // 擬似的に送信
   fetch("https://httpbin.org/post", {

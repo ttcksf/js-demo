@@ -16,7 +16,7 @@
 }
 /* よくある悩みケースに応用 */
 /* JSでクラス名を追加して表示させる方法(cssでtransitionが使えない) */
-/* .remain {
+.remain {
   display: none;
   opacity: 0;
   transition: opacity 2s;
@@ -24,10 +24,9 @@
 .remain.show {
   display: block;
   opacity: 1;
-} */
+}
 /* .remain {
   display: none;
-  opacity: 0;
   transition: opacity 2s;
 }
 .remain.show {

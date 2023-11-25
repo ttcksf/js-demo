@@ -26,9 +26,9 @@ body {
   color: blue;
 }
 /* 子要素になっている.itemの2番目（1つとは限らない） */
-/* :nth-child(2 of .item) {
+:nth-child(2 of .item) {
   background: red;
-} */
+}
 /* 以下と同じ */
 /* .item:nth-child(2) {
   background: red;
@@ -52,9 +52,9 @@ td {
 }
 /* trの中にある奇数のみに背景をつけて互い違いにする */
 /* JSでクラス名を追加して非表示にすると互い違いに背景色がつかなくなる */
-/* tr:nth-child(odd) {
+tr:nth-child(odd) {
   background: skyblue;
-} */
+}
 .hidden {
   display: none;
 }

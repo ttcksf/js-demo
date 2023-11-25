@@ -12,7 +12,7 @@ input.addEventListener("change", () => {
     let result = csv.split("\n").map((row) => {
       return row.split(",");
     });
-    // console.log(result);
+    console.log(result);
     // preview.textContent = result;
 
     const table = document.createElement("table");

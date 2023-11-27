@@ -1,9 +1,11 @@
 const input = document.querySelector(".input");
 
-input.addEventListener("change", (e) => {
+input.addEventListener("change", () => {
   let files = input.files;
   if (files.length > 0) {
-    console.log(files);
+    // console.log(files);
+    // console.log("content-type", files[0].type);
+    // console.log("content-length", files[0].size);
     // このURLはjsonのみアップできる
     let url = "https://jsonplaceholder.typicode.com/posts";
     let header = new Headers();

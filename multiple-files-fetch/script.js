@@ -17,6 +17,8 @@ input.addEventListener("change", () => {
       body: files[0],
       headers: header,
       method: "POST",
+      // CORSエラー回避
+      mode: "no-cors",
     });
     fetch(req)
       .then((res) => console.log(res.status, res.statusText))

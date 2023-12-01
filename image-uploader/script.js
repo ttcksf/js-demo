@@ -55,6 +55,7 @@ const resizeDownload = () => {
   // 画質ダウンを選択したときとそうでない時の画質の値
   const imgQuality = quality.checked ? 0.8 : 1.0;
   downloadBtn.href = canvasTag.toDataURL("image/png", imgQuality);
+
   downloadBtn.download = new Date().getTime();
 };
 

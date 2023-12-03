@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card {
+  width: 150px;
+  height: 150px;
+  background: #ccc;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 24px;
+}

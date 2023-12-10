@@ -13,17 +13,17 @@ const mb = new MutationObserver((entries) => {
 // cardsの削除された属性も監視
 // mb.observe(cards, { attributes: true, attributeOldValue: true });
 // この書き方だとcardsの削除されたclass名に絞って監視
-mb.observe(cards, {
-  attributes: true,
-  attributeOldValue: true,
-  // attributeFilter: ['class'],
-  attributeFilter: ['id'],
-});
+// mb.observe(cards, {
+//   attributes: true,
+//   attributeOldValue: true,
+//   // attributeFilter: ['class'],
+//   attributeFilter: ['id'],
+// });
 // cards.children[0].remove();
-const taskD = document.createElement('div');
-taskD.classList.add('card');
-taskD.innerHTML = 'タスクD';
-cards.appendChild(taskD);
+// const taskD = document.createElement('div');
+// taskD.classList.add('card');
+// taskD.innerHTML = 'タスクD';
+// cards.appendChild(taskD);
 cards.classList.add('active');
 cards.classList.remove('active');
 cards.id = 'test';

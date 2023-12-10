@@ -22,9 +22,11 @@ p {
 .text3 {
   /* サイズに合わせて折り返す（必ずしも横幅いっぱい使うわけではない） */
   text-wrap: balance;
+  /* https://drafts.csswg.org/css-text-4/#valdef-word-break-auto-phrase */
+  /* text-wrapがないと横幅いっぱいに使うことをやってしまう */
+  word-break: auto-phrase;
 }
 .text4 {
   /* 現在は長文には使用できないためタイトルやキャッチコピーなどが好ましい */
   text-wrap: balance;
 }
-/* 要素内の空白はwhite-spaceでコントロールする */

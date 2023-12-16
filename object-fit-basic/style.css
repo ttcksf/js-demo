@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image1 {
+  width: 500px;
+  height: auto;
+  border: 1px solid #333;
+  margin-bottom: 32px;
+}
+.image1 img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.image2 {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #333;
+  margin-bottom: 32px;
+}
+.image2 img {
+  display: inline-block;
+  /* 親要素を参照したときに比率が違うと崩れる */
+  width: 100%;
+  height: 100%;
+  /* 収まるように拡大(初期設定) */
+  object-fit: fill;
+  /* 縦横比を維持したまま全体を埋めるように拡大縮小 */
+  object-fit: cover;
+  /* 縦横比を維持したまま収まるように拡大縮小 */
+  object-fit: contain;
+}

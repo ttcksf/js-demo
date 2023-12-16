@@ -16,7 +16,6 @@ console.log(cardClass);
 // cards.map((card) => {
 //   card.classList.add('active');
 // });
-
 // cardClass.forEach((card) => {
 //   card.classList.add('active');
 // });

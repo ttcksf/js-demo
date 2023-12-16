@@ -1,0 +1,39 @@
+/* .text {
+  background: #00a647;
+  padding: 8px 32px;
+}
+.title {
+  color: #fff;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+.sub {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: calc(32 / 24);
+  vertical-align: middle;
+} */
+
+.section-title {
+  background: #00a647;
+  padding: 8px 32px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  /* 2.高さを揃える */
+  line-height: 32px;
+}
+.section-title span {
+  display: inline-block;
+  font-size: 32px;
+  margin-right: 16px;
+  /* 1.インライン要素の下の余白を消す */
+  vertical-align: bottom;
+  /* 2.高さを揃える */
+  line-height: 32px;
+}

@@ -32,7 +32,7 @@
   display: inline-block;
   font-size: 32px;
   margin-right: 16px;
-  /* 1.インライン要素の下の余白を消す */
+  /* 1.下に下げる */
   vertical-align: bottom;
   /* 2.高さを揃える */
   line-height: 32px;

@@ -23,10 +23,11 @@ const objs = {
     age: 21,
   },
 };
+
 // const copyObjs = { ...objs };
+const copyObjs = JSON.parse(JSON.stringify(objs));
 // 文字列にしてオブジェクトではないものにして、再度オブジェクトに変換すると別物になるため変更が反映されない（入れ子の子供も守られる）
 // console.log(JSON.stringify(objs));
-const copyObjs = JSON.parse(JSON.stringify(objs));
 // コピーした後に変更すると反映される（入れ子の子供は守られない）
 objs[1].name = 'ddd';
 

@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button,
+div {
+  width: 200px;
+  height: 50px;
+  margin: 32px;
+}
+div {
+  /* display: none; */
+  /* opacity: 0; */
+  /* visibility: hidden; */
+}

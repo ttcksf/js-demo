@@ -1,6 +1,6 @@
 // 1.対象外の要素もクリックメソッドでクリックさせることができる
 const btn = document.querySelector('.btnClick');
-// const div = document.querySelector('.divClick');
+const div = document.querySelector('.divClick');
 // btn.addEventListener('click', () => {
 //   alert('test');
 // });
@@ -9,18 +9,18 @@ const btn = document.querySelector('.btnClick');
 // });
 
 // CSSで非表示にしている要素もクリックできるが、DOM生成前は無理
-setTimeout(() => {
-  const div = document.createElement('div');
-  div.classList.add('divClick');
-  div.innerHTML = 'divをクリック';
-  document.body.appendChild(div);
-}, 3000);
-// btn.addEventListener('click', () => {
-//   div.click();
-// });
-// div.addEventListener('click', () => {
-//   alert('test');
-// });
+// setTimeout(() => {
+//   const div = document.createElement('div');
+//   div.classList.add('divClick');
+//   div.innerHTML = 'divをクリック';
+//   document.body.appendChild(div);
+// }, 3000);
+btn.addEventListener('click', () => {
+  div.click();
+});
+div.addEventListener('click', () => {
+  alert('test');
+});
 
 // 2. ctrlキー + Enterキーの組み合わせ
 document.addEventListener('keydown', (e) => {

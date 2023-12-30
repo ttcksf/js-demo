@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.wrapper {
+  width: 100%;
+  padding: 16px;
+}
+.searchContainer {
+  margin: 8px 0;
+}
+.input {
+  background: #ccc;
+  width: 300px;
+  padding: 8px;
+}
+.searchBtn {
+  padding: 8px 16px;
+  margin-left: 8px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+.tab {
+  background: #333;
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.active {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+.hidden {
+  display: none;
+}
+.videos {
+  width: 1000px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.card {
+  width: 30%;
+  height: 250px;
+  margin-bottom: 8px;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.name {
+  font-weight: bold;
+}
+.category {
+  color: #fff;
+  background: #666;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

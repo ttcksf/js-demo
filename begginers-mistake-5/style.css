@@ -10,7 +10,7 @@ div {
   margin: 32px;
 }
 div {
-  /* display: none; */
+  display: none;
   /* opacity: 0; */
   /* visibility: hidden; */
 }

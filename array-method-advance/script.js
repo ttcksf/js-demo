@@ -21,12 +21,13 @@ const obj = {
   age: 30,
 };
 // JSは型判定すると配列がオブジェクトとして登録されているのでわかりづらい
+console.log('typeofだと:', typeof arr3);
+console.log('typeofだと:', typeof obj);
+console.log('isArrayだと:', Array.isArray(arr3));
+console.log('isArrayだと:', Array.isArray(obj));
+
 console.log(arr3);
-console.log(typeof arr3);
 console.log(obj);
-console.log(typeof obj);
 // 配列にのみあるlengthの有無で見分けていた
 console.log(arr3.length >= 0);
 console.log(obj.length >= 0);
-console.log(Array.isArray(arr3));
-console.log(Array.isArray(obj));

@@ -16,10 +16,13 @@ for (const txt of text2) {
   console.log(txt.textContent);
 }
 // 配列に変換すれば使えるようになる
+console.log(text2);
+console.log(Array.from(text2));
 Array.from(text2).forEach((txt) => {
   console.log(txt.textContent);
 });
 // 配列にあるインデックス番号のようなキーを作る
+console.log(text2);
 const keys = Object.keys(text2);
 console.log(keys);
 keys.forEach((key) => {

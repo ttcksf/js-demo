@@ -7,19 +7,21 @@ const box2 = document.querySelector('.box2');
 console.log(box1);
 console.log(box2);
 // 親要素
-console.log('親Node:', box1.parentNode);
 console.log('親要素:', box1.parentElement);
-// テキストが表示される
-console.log('子Node:', box1.childNodes);
 // HTMLタグがないため空の配列
 console.log('子要素:', box1.children);
 
-console.log('親Node:', box2.parentNode);
 console.log('親要素:', box2.parentElement);
-// コメントも含めた全てのテキストやHTMLタグが表示される
-console.log('子Node:', box2.childNodes);
 // pタグがあるため子要素はpタグ
 console.log('子要素:', box2.children);
+
+console.log('親Node:', box1.parentNode);
+// テキストが表示される
+console.log('子Node:', box1.childNodes);
+
+console.log('親Node:', box2.parentNode);
+// コメントも含めた全てのテキストやHTMLタグが表示される
+console.log('子Node:', box2.childNodes);
 
 // querySelectorAllのように静的なNodeListでは動的に変更を反映しない
 const boxes = document.querySelectorAll('.box');

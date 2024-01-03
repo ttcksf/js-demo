@@ -5,7 +5,7 @@
 // いきなりデータ単体ではなく最初にレスポンスオブジェクトが返ってくる
 fetch('https://jsonplaceholder.typicode.com/todos/')
   .then((res) => {
-    // console.log(res);
+    console.log(res);
     return res.json();
   })
   .then((data) => console.log(data));
@@ -28,7 +28,8 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
   .then((res) => res.json())
   .then((data) => console.log(data));
 // オブジェクトはそのまま送れないのでJSONにして送る
-// ヘッダーにはJSON形式で送信する旨を記載
+// ヘッダーにはJSON形式で自動的に登録される内容に書き足す内容を記載する
+// メソッドはgetであればデフォルトで指定してくれている
 // https://jsonplaceholder.typicode.com/のような基本となるURLをエンドポイント
 // エンドポイントに指定するキーワードpostsやtodosなどをクエリ
 // これら一連の流れやキーワードの総称をHTTP通信と表現したりする

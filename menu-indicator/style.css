@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #116a7b;
+  padding: 16px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 48px;
+}
+nav {
+  display: flex;
+  gap: 8px;
+}
+nav a {
+  position: relative;
+  padding: 16px 24px;
+}

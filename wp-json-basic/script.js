@@ -9,6 +9,7 @@ const main = () => {
         throw new Error(`リクエスト失敗： ${res.status}`);
       })
       .then((data) => {
+        console.log(data);
         data.forEach((item) => {
           const date = new Date(item.date);
           const y = date.getFullYear();

@@ -1,5 +1,4 @@
 const app = {
-  pages: [],
   init: function () {
     const links = document.querySelectorAll('.nav-link');
     links.forEach((link) => {

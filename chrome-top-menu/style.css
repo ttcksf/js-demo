@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+.mv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.cards {
+  width: 304px;
+  height: 64px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff;
+}
+.card {
+  width: 64px;
+  height: 100%;
+  margin-right: 16px;
+}
+.card:last-child {
+  margin-right: 0;
+}
+.card a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.card a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

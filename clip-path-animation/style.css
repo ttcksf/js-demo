@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 200vh;
+}
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #efecec;
+}
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.section1 {
+  background: #fc6736;
+  /* 左上（top:0; left:0;）に200pxのサイズ */
+  clip-path: circle(200px at 0 0);
+}
+.section2 {
+  background: #0c2d57;
+  /* 右下（top:100%; left:100%;）に200pxのサイズ */
+  clip-path: circle(200px at 100% 100%);
+}
+main h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 700;
+}
+/* clip-pathで作られた図形の外側は非表示扱いになるのでスクロールで初めて反映される */
+.section1 h1 {
+  color: #efecec;
+  /* 逆の色 */
+  -webkit-text-stroke: 3px #0c2d57;
+  text-stroke: 3px #0c2d57;
+  z-index: 3;
+}
+.section2 h1 {
+  color: #efecec;
+  /* 逆の色 */
+  -webkit-text-stroke: 3px #fc6736;
+  text-stroke: 3px #fc6736;
+  z-index: 3;
+}

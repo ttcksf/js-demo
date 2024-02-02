@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+.section1 {
+  background: #fff6e9;
+}
+.section2 {
+  background: #40a2e3;
+}
+.header {
+  position: relative;
+}
+.header header {
+  background: #0d9276;
+  width: 100%;
+  /* ヘッダーだけ浮かす */
+  /* fixedは画面に固定してしまう */
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.header .mv {
+  position: relative;
+  min-height: 90vh;
+}
+.mainMv {
+  background: url("https://picsum.photos/id/16/2500") no-repeat center center /
+    cover;
+}
+.subMv {
+  background: url("https://picsum.photos/id/12/2500") no-repeat center center /
+    cover;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 16px;
+}

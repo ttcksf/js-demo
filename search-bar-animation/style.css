@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 64px;
+}
+.search {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #333;
+  border-radius: 64px;
+  box-shadow: 0 0 0 8px #333;
+  transition: 0.4s;
+  /* inputタグを隠すため */
+  overflow: hidden;
+}
+.search.active {
+  width: 400px;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+.icon img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.input {
+  position: relative;
+  width: 320px;
+  height: 56px;
+  /* アイコンを避けるため */
+  left: 56px;
+  display: grid;
+  place-items: center;
+}
+.input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  padding: 4px 8px;
+}

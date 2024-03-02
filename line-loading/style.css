@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  paddiong: 0;
+  box-sizing: border-box;
+}
+.loading::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: #0c359e;
+}
+.loading::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 33.33%;
+  width: 33.33%;
+  height: 2px;
+  background: #fff;
+  z-index: 2;
+  transform-origin: center;
+  animation: loading 1s infinite alternate;
+}
+@keyframes loading {
+  0% {
+    transform: scaleX(0);
+  }
+  ,
+  100% {
+    transform: scaleX(1);
+  }
+}

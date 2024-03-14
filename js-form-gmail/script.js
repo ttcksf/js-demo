@@ -6,39 +6,7 @@ const subject = document.querySelector('.subject');
 const text = document.querySelector('.text');
 
 function sendEmail() {
-  const bodyMsg = `
-    お名前：${fname.value}<br>
-    メールアドレス：${email.value}<br>
-    電話番号：${tel.value}<br>
-    件名：${subject.value}<br>
-    内容：${text.value}
-  `;
-  Email.send({
-    SecureToken: '01b2bd5f-ed12-49bf-a55b-23b6c7f6bcd4',
-    To: 'ttc0104ksf1993@gmail.com',
-    From: 'ttc0104ksf1993@gmail.com',
-    // Subject: 'テスト送信',
-    Subject: subject.value,
-    // Body: 'こちらはテストメールです',
-    Body: bodyMsg,
-  }).then((message) => {
-    if (message == 'OK') {
-      alert(message);
-    } else {
-      [];
-    }
-  });
-  // setup an smtp server hereをクリックしてログイン
-  // アンケートは一番上を回答して終了する
-  // settings→create SMTPでGmailアドレスを入力
-  // usernameとpasswordをポップアップの内容に差し替える
-  // settings→manage domains→Email verification→Start verification
-  // I don’t own a domain→verify email→アドレスを入力→メール検証をクリアしてリロード
-  // Email verificationでメールアドレスがverifiedになる
-
-  // Encrypt your smtp credentialsをクリックして、UserNameとPasswordをコピペして、GenerateToken
-  // 表示されたトークンをSecureTokenの値にコピペ
-  // ↑からHostとUsernameとPasswordを削除する
+  console.log('送信');
 }
 
 function checkInput() {
@@ -78,18 +46,5 @@ function checkInput() {
 form.addEventListener('submit', (e) => {
   checkInput();
   e.preventDefault();
-  // 送信できるとポップアップが出る
-  // 迷惑メールから解除
-  // sendEmail();
-
-  if (
-    !fname.classList.contains('error') &&
-    !email.classList.contains('error') &&
-    !tel.classList.contains('error') &&
-    !subject.classList.contains('error') &&
-    !text.classList.contains('error') &&
-    !email.classList.contains('mailErr')
-  ) {
-    sendEmail();
-  }
+  sendEmail();
 });

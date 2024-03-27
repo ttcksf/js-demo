@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 640px;
+}
+.area1 {
+  /* sectionに対してではなく画面に対して */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://picsum.photos/2000?random=1");
+  background-position: center;
+  background-attachment: fixed;
+  transition: 0.8s;
+}
+.area2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  height: 640px;
+  /* background: #000; */
+  background: url("https://picsum.photos/2000?random=1");
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  transition: 1.6s;
+}
+section:hover .area2 {
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+section:hover .area1 {
+  filter: blur(10px);
+}

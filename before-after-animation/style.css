@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+.container {
+  width: 800px;
+  height: 800px;
+  position: relative;
+}
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* filter: blur(10px); */
+  animation: animate 1.6s linear forwards;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+/* .container:hover .image {
+  filter: blur(0);
+  transition: 2s;
+} */
+
+@keyframes animate {
+  0% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}

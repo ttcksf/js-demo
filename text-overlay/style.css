@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+h1 {
+  font-size: 100px;
+  font-family: "Impact", sans-serif;
+  position: relative;
+  color: #eee;
+}
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 30%; */
+  width: 0%;
+  /* 色のみ変更 */
+  /* color: #333; */
+  /* 枠線のみ変更 */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 4px;
+  overflow: hidden;
+  transition: 4s;
+}
+h1:hover::before {
+  width: 100%;
+}

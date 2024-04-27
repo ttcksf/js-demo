@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+h1 {
+  font-family: "Impact", sans-serif;
+  font-size: 100px;
+  display: inline-block;
+  background: linear-gradient(to right, #ffb84c, #f266ab, #a459d1, #2cd3e1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* 影があると見た目の印象が変わる */
+  /* text-shadow: 0 0 8px rgba(0, 0, 0, 0.4); */
+}

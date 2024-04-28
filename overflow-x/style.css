@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+.container {
+  border: 8px solid red;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.scroll {
+  height: 100%;
+  /* 非表示にするのではなく親要素の中でスクロールさせる(横幅を固定していれば縦スクロール) */
+  overflow: auto;
+  /* 意図的に横スクロールに切り替えられる */
+  columns: 1;
+}

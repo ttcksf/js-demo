@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+.section1 {
+  background: url("https://picsum.photos/id/1/2000") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+}
+.section2 {
+  background: url("https://picsum.photos/id/2/2000") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+}
+.section3 {
+  background: url("https://picsum.photos/id/3/2000") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+}
+.section4 {
+  background: url("https://picsum.photos/id/4/2000") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+}
+.sectionText {
+  padding: 56px 96px;
+}

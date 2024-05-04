@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 16px;
+}
+.cursorArea {
+  width: 500px;
+  height: 500px;
+  background: #333;
+  /* cursor: help; */
+  /* cursor: wait; */
+  /* cursor: crosshair; */
+  /* cursor: not-allowed; */
+  /* cursor: grab; */
+  cursor: url("./cursor.png"), pointer;
+}

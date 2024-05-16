@@ -3,36 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  padding: 32px;
-}
-/* 1.上下左右に中央揃え */
-/* .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* .cards {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
-/* 2.子要素を起点に考える方法もある */
 .container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  /* 親要素に余裕があるときに縦方向の配置を移動させる */
+  align-items: center;
 }
 .cards {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  /* 横並びにする */
   display: flex;
-  justify-content: center;
-  /* align-itemsに対してalign-contentは子要素を親要素に対してどこに配置するかを指定するもの */
-  align-content: center;
+  /* 折り返し */
   flex-wrap: wrap;
 }
 .card {

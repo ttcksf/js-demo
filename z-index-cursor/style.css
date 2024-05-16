@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: #151515;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 48px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+  line-height: 48px;
+}
+.cursor {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  /* ずれを補正 */
+  transform: translate(-50%, -50%);
+  /* divタグで重ねるため下の要素に触れないのを解消する */
+  pointer-events: none;
+  transition: 0.2s;
+  transform-origin: center;
+}
+.anime {
+  transform: scale(1.6) translate(-50%, -50%);
+  background: #fff;
+}
+li {
+  z-index: 2;
+}
+li.active a {
+  color: #c73659;
+}

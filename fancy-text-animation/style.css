@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 32px;
+}
+h1 {
+  font-family: "Impact", sans-serif;
+  font-size: 100px;
+}
+span {
+  opacity: 0;
+  transition: 0.4s;
+}
+.fade {
+  opacity: 1;
+}
